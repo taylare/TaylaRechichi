@@ -5,18 +5,6 @@ body {
     height: 100vh; 
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 section {
     display: grid;
     place-items: center;
@@ -150,6 +138,112 @@ button.button-home:active::before {                                             
     transition-delay: 600ms;
 }
 
+/* card content */
 
+.card-header {
+    border-bottom: var(--bs-modal-header-border-width) solid var(--primary-color);
+    border-bottom-width: 0.2em;
+    background: rgb(255, 192, 239);
+    border-radius: 5px 5px 0px 0px;
+    }
+    
+    #card-header2 {
+      background: rgb(206, 255, 208);
+      }
+    
+    #card-header3 {
+      background: rgb(206, 227, 255);
+      }
+    
+    #card-header4 {
+      background: rgb(255, 246, 206);
+      }
+    
+    .card-body {
+      border-top-color: var(--primary-color);
+      border-top-width: 0.1em;;
+      border-top-style: solid;
+      margin-bottom: 5%;
+    }
+    
+    .card {
+      border-radius: 5px !important; 
+      border-style:solid !important;
+      border-width:0.1em;
+      border-color: var(--primary-color);
+    }
+    
+    .row {
+      margin-right: calc(var(--bs-gutter-x) * 1.0);
+      margin-left: calc(var(--bs-gutter-x) * 1.0);
+    }
+
+    /*video btn */
+
+#video-button {
+    padding: 0px 0px 0px 0px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    margin-left: 2%;
+    font-size: 10pt;
+    width: 6rem;
+}
+
+#video-button:hover {
+  background: rgb(255, 255, 255);
+  color: var(--primary-color);
+    
+}
+
+/* modal content */
+
+.modal-content  {
+    border-radius: 5px !important; /*!important to override the original modal styles */
+    border-style:solid !important;
+    border-width:0.1em;
+    border-color: var(--primary-color);
+} 
+
+.modal-body {
+    border-top-color: var(--primary-color);
+    border-top-width: 0.1em;
+    border-top-style: solid;
+}
+
+
+.modal-header {
+border-bottom: var(--bs-modal-header-border-width) solid var(--primary-color);
+border-bottom-width: 0.2em;
+background: rgb(255, 192, 239);
+border-radius: 5px 5px 0px 0px;
+
+}
+
+#modal-header2 {
+  background: rgb(206, 255, 208);
+  }
+
+#modal-header3 {
+  background: rgb(206, 227, 255);
+  }
+
+#modal-header4 {
+  background: rgb(255, 246, 206);
+  }
+
+.btn-close {
+    width: 1%;
+    height: 1%;
+    background: var(--warning-color); /*editing the exit button to be a red circle instead of the X*/
+    border-color: var(--primary-color);
+    border-radius: 50%;
+    border-style: solid;
+    border-width:1px;
+    margin-bottom: 2%;
+}
+
+.modal-header .btn-close {
+    margin-top: -39px; /*to get the exit button in the top right corner */
+}
   
 /* end of section 2 */
