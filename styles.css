@@ -25,6 +25,96 @@ body {
     transform: translate(-50%, -50%);
 }
 
+ /* BUTTONS ON HOME PAGE */
+  
+ .btn-container {
+	display: flex;
+	justify-content: center;
+	gap: 1rem; /* gap between buttons */
+  }
+  
+  .btn {
+	font-weight: 600;
+	transition: all 300ms ease; /*transition effect that makes the hover effect smooth instead of abrupt */
+	padding: 1rem;
+	width: 9rem;
+	border-radius: 2rem;
+  
+  }
+  
+/*FORMATTING/LAYOUT STYLES FOR HOME BUTTONS*/
 
+button.button-home {
+  position: relative;
+  display: inline-block;
+  border: 0; /* Removes the default button border */
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/*APPEARANCE STYLES FOR HOME BUTTONS */ 
+
+button.button-home {
+  font-weight: 600;
+  color: #382b22;
+  padding: 0.75em 1.5em;
+  outline: none;
+  background: #fff0f0;
+  border: 2px solid #080708;
+  border-radius: 0.75em;
+  transform-style: preserve-3d; /*ensures that the 3D transformations of the buttons will be maintained*/                          
+}
+
+
+/*::before pseudo-element allows the btn to have effects and decoration without having to alter the html or other css code - it's just for aesthetics */
+button.button-home::before {
+  position: absolute; /*position ::before absolutely within the button */
+  content: ""; /* adding empty content allows ::before to render */
+  width: 100%;      
+  height: 100%;       
+  right: 0;     /*aligns the 3d effect to the right */
+  bottom: 0;   /*    and the bottom of the btn      */
+  background: #f9c4d2; 
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #000000; /*creates a black border around the shadow*/
+  transform: translate3d(0, 0.75em, -1em); /*0: no horizontal movement, 0.75em: pushing element slightly downward, -1em: pushing it backward for a 3D depth effect on the button */
+} /*note: (x, y, z) where x= horizontal, y= vertical, z= depth*/
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: transparent;
+}
+
+button.button-home:hover {
+  background: #ffe9e9; /* Change background color on hover to a slightly darker colour */
+  transform: translate(0, 0.25em); /* Move the button slightly downward when hovering over it */
+}
+button.button-home:hover::before {
+  box-shadow: 0 0 0 2px #000000, 0 0.5em 0 0 #ffe3e2; /* dual-box shadow effect: adds another shadow effect and moves it downward */
+}
+button.button-home:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em); /* Move the button more downward on click*/
+}
+button.button-home:active::before {                                                       /*these both remove the 3D effect when clicking the btn*/
+  box-shadow: 0 0 0 2px #000000, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -0.75em); /* Moves pseudo-element more backward on click */
+}
+
+ /*making responsive for mobile*/
+ @media only screen and (max-width: 767px) {
+
+    .btn-container {
+      gap: 0.75rem;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 0%;
+    }
+  }
 
 /* end of section 1 */
