@@ -289,5 +289,22 @@ a i:hover {
     2px 2px 0px #caf5c3; 
 }
 
+.vid-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30.25%; /* 16:9 aspect ratio (height / width * 100) */
+  height: 0;
+  overflow: hidden;
+}
+
+.vid-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30em;
+  height: 20em;
+  border: none;
+}
+
 
 /* end of section 3 */
