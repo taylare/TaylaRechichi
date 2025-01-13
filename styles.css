@@ -114,7 +114,7 @@ button.button-home:active::before {                                             
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
     
 }
 
@@ -138,8 +138,8 @@ button.button-home:active::before {                                             
 }
 
 img {
-  width: 40em;
-  height: 25em;
+  width: 30em;
+  height: 20em;
   border: 3px solid black;
   border-radius: 9%;
 }
@@ -163,12 +163,12 @@ img {
 }
 
 p.proj-desc {
-  font-size: larger;
+
   font-weight: 600;
 }
 
 p.proj-desc:hover {
-  font-size: larger;
+  
   background-color:#97e08c;
   padding: 1%;
   font-weight: bolder;
@@ -219,7 +219,7 @@ p.css {
   border-radius: 5px;
   border-style: solid;
   display: inline-block;
-  width: 10%;  
+  width: 13%;  
   text-align: center; 
 }
 
@@ -265,7 +265,6 @@ a i:hover {
     -2px 2px 0px #000,  
     2px 2px 0px #000; 
 }
-
 
 
 /* end of section 2 */
