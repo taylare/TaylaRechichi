@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tayla Rechichi E-Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <ul class="nav justify-content-center">
@@ -55,101 +55,130 @@
     <!--end of section 1-->
 
     <!--SECTION 2-->
-<div class="container text-center hidden">
-    <h1> My projects:<br> </h1>
+<div class="container hidden">
+    <h1 class="text-center mb-5"> My projects:<br> </h1>
 
-    <div class="row hidden projects">
-        <div class="col">
-          <h1>Flight Dashboard Project</h1>
-          <p>
+    <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-12 col-md-7">
+          <h2 class="proj-title">Flight Dashboard Project</h2>
+            <p class="proj-desc">
             The project features a flight dashboard with a dynamic 2D game-inspired interface. It integrates real-time location tracking using Leaflet, where users must click on two checkpoints (represented by sunflowers) to display available flight options. These checkpoints help determine the user's journey, allowing for geographical calculations related to the flight path. Once the checkpoints are selected, the flight options are filtered based on criteria like duration, cost, and plane type. The dashboard allows users to add flights to a cart, view booking details in a modal, and submit their booking through a form. Data is processed in JSON format, and the interface combines map visualization, dynamic updates, and interactive features for a seamless user experience.
           </p>
+
+          <div class="container sticker">
+            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
+          </div>
+
         </div>
         <div class="col-md-auto">
-            <a href="https://taylare.github.io/final/" target="_blank">-></a>
+            <a href="https://taylare.github.io/final/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
         </div>
         <div class="col col-lg-2">
-          3 of 3
+          <div>
+            <img src="images/flight2.png">
+          </div>
         </div>
       </div>
 
-      <div class="row hidden projects">
-        <div class="col">
-          <h2>The Simon Game</h2>
-          <p></p>
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-12 col-md-7">
+          <h2 class="proj-title">The Simon Game</h2>
+          <p class="proj-desc">
+            This code implements a basic version of the "Simon" memory game using HTML, CSS, and JavaScript (with jQuery). The game involves four colored buttons (green, pink, yellow, blue) that light up in a random sequence. The player must repeat the sequence by clicking the corresponding buttons. As the game progresses, the sequence becomes longer. If the player makes a mistake, the game ends and prompts for a restart. The game’s difficulty increases with each successful round, and the user's progress is displayed with a level counter. 
+          </p>
+          <div class="container sticker">
+            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <a href="https://taylare.github.io/thesimongame/" target="_blank">-></a>
+        </div>
+        <div class="col col-lg-2">
+          <div>
+            <img src="images/simon.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-12 col-md-7">
+          <h2 class="proj-title">Interactive Quiz</h2>
+          <p class="proj-desc">This project is an interactive web-based quiz application. Users enter their name to begin the quiz, where questions are displayed as animated cards. The application uses jQuery for real-time DOM updates and Bootstrap for responsive design. A timer tracks the quiz duration, and scores are calculated based on the user’s responses. Results, including the score and time taken, are shown in a modal. The quiz incorporates smooth animations, sequential question loading, and optional hints for a user-friendly experience.</p>
+          <div class="container sticker">
+            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
+          </div>
         </div>
         <div class="col-md-auto">
           <a href="https://taylare.github.io/Lab7Quiz/" target="_blank">-></a>
         </div>
         <div class="col col-lg-2">
-          3 of 3
+          <div>
+            <img src="images/jsquiz.png">
+          </div>
         </div>
       </div>
 
-      <div class="row hidden projects">
-        <div class="col">
-          <h2>Interactive Quiz</h2>
-          <p>This project is an interactive web-based quiz application. Users enter their name to begin the quiz, where questions are displayed as animated cards. The application uses jQuery for real-time DOM updates and Bootstrap for responsive design. A timer tracks the quiz duration, and scores are calculated based on the user’s responses. Results, including the score and time taken, are shown in a modal. The quiz incorporates smooth animations, sequential question loading, and optional hints for a user-friendly experience.</p>
-        </div>
-        <div class="col-md-auto">
-          <a href="https://taylare.github.io/Lab7Quiz/" target="_blank">-></a>
-        </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
-      </div>
-
-      <div class="row hidden projects">
-        <div class="col">
-          <h1>Interactive User Management System</h1>
-          <p>This project is a user management system using HTML, CSS, and JavaScript ES6. It features a login modal where users enter their username, validated via regex. Once logged in, users are presented with a personalized dashboard showing their profile and information. Admins can view and delete non-admin users, while non-admins can only see admins and their own details. The dashboard includes dynamic animations for user actions and a responsive design. Key features include user validation, dynamic card creation, and a delete function with an animated slide-out effect.</p>
-          <p>usernames are: User1 - 12</p>
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col  col-md-7">
+          <h2 class="proj-title">Interactive User Management System</h2>
+          <p class="proj-desc">This project is a user management system using HTML, CSS, and JavaScript ES6. It features a login modal where users enter their username, validated via regex. Once logged in, users are presented with a personalized dashboard showing their profile and information. Admins can view and delete non-admin users, while non-admins can only see admins and their own details. The dashboard includes dynamic animations for user actions and a responsive design. Key features include user validation, dynamic card creation, and a delete function with an animated slide-out effect.</p>
+          <p class="proj-desc">usernames are: User1 - 12</p>
+          <div class="container sticker">
+            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
+          </div>
         </div>
         <div class="col-md-auto">
           <a href="https://taylare.github.io/MidtermProject/" target="_blank">**</a>
         </div>
         <div class="col col-lg-2">
-          3 of 3
+          <div>
+            <img src="images/midterm.png">
+          </div>
         </div>
       </div>
 
-      <div class="row hidden projects">
-        <div class="col">
-          Quiz Java Program
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-md-7">
+          <h2 class="proj-title">Java-Based Quiz Project</h2>
+            <p class="proj-desc">
+              This Java-based quiz application is designed using the Model-View-Controller (MVC) architecture, supporting both single and multiple-answer question formats. It dynamically displays questions, providing real-time feedback on user responses. The application seamlessly integrates external data by reading and writing XML and JSON files.
+With an event-driven design, the application ensures efficient user interaction and a well-organized, maintainable codebase.
+            </p>
+            <div class="container sticker">
+              <p class="java">Java</p>
+            </div>
         </div>
         <div class="col-md-auto">
           <a href="bonusQuiz.html" target="_blank">-></a>
         </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
       </div>
 
-      <div class="row hidden projects">
-        <div class="col">
-          Calculator Java Program
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-md-7">
+          <h2 class="proj-title">RPN Calculator Project</h2>
+          <p class="proj-desc">
+This code implements an RPN (Reverse Polish Notation) calculator using the Model-View-Controller (MVC) architecture. The CalcRPNController handles user input from the GUI and interacts with the CalcRPNModel, which performs calculations using the CalcBrain class. The calculator supports arithmetic operations, decimal entry, and clear functions, with a stack-based approach to evaluate expressions in Reverse Polish Notation.
+          </p>
+          <div class="container sticker">
+            <p class="java">Java</p>
+          </div>
         </div>
         <div class="col-md-auto">
           <a href="calcRPN.html" target="_blank">-></a>
         </div>
-        <div class="col col-lg-2">
-          3 of 3
-        </div>
       </div>
 
-      <div class="row hidden projects">
+      <div class="row hidden projects d-flex justify-content-start">
 
-            <div class="col d-flex align-items-stretch">
-              <!-- Card -->
-              <div class="card h-100 fade-up2">
-                <div class="card-header" id="card-header2">
-                  <h5 class="card-title text-center">Networking Project</h5>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
+            <div class="col col-md-7 d-flex align-items-stretch">
+              <div>
+                  <h2 class="proj-title">Networking Project</h2>
+                  <p class="proj-desc">
                     I developed a real-time temperature monitoring system using Raspberry Pi, CentOS, and Python. The Pi reads temperature data via a 1-Wire sensor and is secured with a firewall (ufw) allowing future access on port 8000. I set up Apache2 to display the temperature readings on a web page and modified the web_temperature.py program to control LEDs based on temperature changes and track the data over time.
                   </p>
-                </div>
+                  <div class="container sticker">
+                    <p class="python">Python</p>
+                  </div>
               </div>
             </div>
           
@@ -162,9 +191,21 @@
             </div>
           </div>
 
-          <div class="row hidden projects">
+          <div class="row hidden projects d-flex justify-content-start">
 
-            <div class="col d-flex align-items-stretch">
+            <div class="col col-md-7 d-flex align-items-stretch">
+              <div>
+                  <h2 class="proj-title">Counting Project with Python and Raspberry Pi</h2>
+                  <p class="proj-desc">
+                    In this project, I used Raspberry Pi, CentOS, and Python to create programs for Pi Hat control. I started by testing the Hat LEDs, writing Python scripts with the RPi.GPIO library to control the yellow, red, and green LEDs through specific GPIO pins. I then developed a "counting.py" script that changed the LED color based on button presses—red for odd numbers, green for even numbers, and yellow for powers of 2.
+                  </p>
+                  <div class="container sticker">
+                    <p class="python">Python</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-stretch">
                 <!-- Video -->
                 <video class="h-100" width="100%" controls>
                   <source src="videos/counting.mov" type="video/mp4">
@@ -172,18 +213,6 @@
                 </video>
               </div>
 
-            <div class="col d-flex align-items-stretch">
-              <!-- Card -->
-              <div class="card h-100 fade-up2">
-                <div class="card-header" id="card-header2">
-                  <h5 class="card-title text-center">Counting Project with Python and Raspberry Pi</h5>
-                </div>
-                <div class="card-body">
-                  <p class="card-text">
-                    In this project, I used Raspberry Pi, CentOS, and Python to create programs for Pi Hat control. I started by testing the Hat LEDs, writing Python scripts with the RPi.GPIO library to control the yellow, red, and green LEDs through specific GPIO pins. I then developed a "counting.py" script that changed the LED color based on button presses—red for odd numbers, green for even numbers, and yellow for powers of 2.
-                  </p>
-                </div>
-              </div>
             </div>
           
           </div>
