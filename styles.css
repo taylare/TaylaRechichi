@@ -1,7 +1,8 @@
 body {
-    background-color: rgb(216, 255, 210);
+    background-color: rgb(0, 0, 0);
     background-size: 400% 400%;
     height: 100vh; 
+    color: white;
 }
 
 section {
@@ -108,7 +109,29 @@ button.button-home:active::before {                                             
 
 /* end of section 1 */
 
-/* SECTION 2 PROJECTS */
+/* SECTION 2 */
+
+/* 
+element.style {
+    opacity: 1;
+    transform: translateY(-40px) scale(1) translateZ(0px);
+}
+.Skills_technology__Z\+m\+X {
+    align-items: center;
+    border: 3px solid #ffd60a;
+    border-radius: 20px;
+    display: flex
+;
+    flex: 1 1 20%;
+    justify-content: center;
+    margin: 0 3rem 4rem 3.5rem;
+    width: 50px;
+}
+*/
+
+/* end of section 2 */
+
+/* SECTION 3 PROJECTS */
 
 .hidden {
     opacity: 0;
@@ -260,11 +283,11 @@ a i {
 a i:hover {
   color: #a1f971;
   text-shadow: 
-    -2px -2px 0px #000,  
-    2px -2px 0px #000,
-    -2px 2px 0px #000,  
-    2px 2px 0px #000; 
+    -2px -2px 0px #caf5c3,  
+    2px -2px 0px #caf5c3,
+    -2px 2px 0px #caf5c3,  
+    2px 2px 0px #caf5c3; 
 }
 
 
-/* end of section 2 */
+/* end of section 3 */
