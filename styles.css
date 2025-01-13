@@ -234,4 +234,38 @@ p.css {
   text-align: center; 
 }
 
+.fa-circle-play:before, .fa-play-circle:before {
+  content: "\f144";
+  font-size: 45pt;
+  color: #a1f971;
+
+}
+
+
+
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Stack the icons vertically */
+  align-items: center; /* Center align the icons horizontally */
+  gap: 10px; /* Add space between the icons */
+}
+
+/* Make sure the icons have a consistent size */
+a i {
+  font-size: 45pt; /* Adjust icon size */
+  color: #a1f971; /* Default color */
+}
+
+/* Optional: hover effect */
+a i:hover {
+  color: #a1f971;
+  text-shadow: 
+    -2px -2px 0px #000,  
+    2px -2px 0px #000,
+    -2px 2px 0px #000,  
+    2px 2px 0px #000; 
+}
+
+
+
 /* end of section 2 */
