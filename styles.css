@@ -429,5 +429,73 @@ a i:hover {
 
 /* end of section 3 */
 
+@media screen and (max-width: 600px) {
 
+    .languages {
+        background-color: #b0f592;
+        margin-bottom: 2%;
+        padding: 0%;
+        margin: 5px;
+        width: 47%;
+        border-radius: 40px;
+        color: black;
+    }
+
+    p.proj-desc {
+      font-weight: 600;
+      background-color: #b0f592;
+      padding: 1%;
+      font-weight: bolder;
+      color: rgb(0, 0, 0);
+      padding: 2%;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: row; /* Stack the icons vertically */
+      align-items: left; /* Center align the icons horizontally */
+      gap: 10px; /* Add space between the icons */
+    }
+
+    img {
+      width: 26em;
+      height: 20em;
+      border: 3px solid black;
+      border-radius: 9%;
+  }
+
+  .java {
+    width: 34%;
+  }
+
+  .python {
+    width: 40%;
+  }
+
+  .jp-proj {
+    display: flex;
+      flex-direction: column; /* Stack the icons vertically */
+      align-items: left; /* Center align the icons horizontally */
+      gap: 10px;
+  }
+
+  .vid-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 80%; 
+    
+    overflow: hidden;
+  }
+  
+  .vid-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30em;
+    height: 20em;
+    border: none;
+  }
+}
 
