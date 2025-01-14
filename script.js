@@ -30,3 +30,15 @@ hiddenElements.forEach(el => observer.observe(el));
 
 // Observe each language element
 languageElements.forEach(el => observer.observe(el));
+
+
+function openEmailPopup() {
+    const email = 'tay.rechichi32@gmail.com'; 
+    const subject = encodeURIComponent('Inquiry from Portfolio'); 
+    const body = encodeURIComponent('Hi Tayla,\n\nI would like to get in touch regarding your portfolio.'); // Email body
+
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+    
+    // Open the default email client with pre-filled content
+    window.location.href = mailtoLink;
+}
