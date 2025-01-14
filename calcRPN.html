@@ -4,25 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Java Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+        html, body {
+            width: 100%;
+            margin: 0;
+            /* Gradient background animation */
+            /* Creates a linear gradient that's diagonal */
+            background: linear-gradient(-45deg, rgb(180, 254, 180), #bef2ff, #ffd4f7,#dcaeff);
+            background-size: 400% 400%; /*expanded the background size so the linear animation works*/
+            animation: gradient 15s ease infinite; /* using keyframe to animate the gradient over 15 seconds with an infinite loop */
+            height: 100vh; 
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
         }
+
+          /* Keyframe animation for gradient background */
+          @keyframes gradient {
+            0% {
+                background-position: 0% 50%; /* Gradient starts on the left, centered vertically */
+            }                                /*makes it initially appear that the gradient starts on the left side while staying centered vertically.*/
+            50% {
+                background-position: 100% 50%; /*Gradient moves to the right, staying centered vertically, */
+            }                                  /*gradient is positioned at the right edge (100%) horizontally and at the center (50%) vertically */
+            
+            100% {
+                background-position: 0% 50%; /* Gradient loops back to the starting position */
+            }
+        }
         .download-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 32px;
+            color: rgb(255, 157, 247);
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
+            font-size: 80px;
         }
         .download-btn:hover {
-            background-color: #45a049;
+            color: #ff47e6;
         }
     </style>
 </head>
@@ -31,8 +50,7 @@
     <h1>Download and Run Java Application</h1>
     <p>Click the button below to download the Java application:</p>
     
-    <!-- Replace the href link with your actual file link -->
-    <a class="download-btn" href="files/CalcRPN.jar" download>Download Application</a>
+    <a class="download-btn" href="files/CalcRPN.jar" download>Download Jar File</a>
     
     <p><strong>How to Run:</strong></p>
     <p>1. Download the file.<br>
