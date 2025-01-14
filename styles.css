@@ -384,8 +384,6 @@ p.css {
 
 }
 
-
-
 .icon-container {
   display: flex;
   flex-direction: column; /* Stack the icons vertically */
@@ -393,10 +391,56 @@ p.css {
   gap: 10px; /* Add space between the icons */
 }
 
+.icon-j {
+  display: flex;
+  flex-direction: row; 
+  margin-left: 40%;
+  gap: 20px; /* Add space between the icons */
+}
+
+.java-i {
+  content: "\f144";
+  font-size: 45pt;
+  color: #a1f971;
+
+}
+
+.java-i:hover {
+  transform: scale(1.1); /*scales slightly when hovering over btn */
+
+}
+
+.java-i:hover::after {
+  content: attr(data-icon); /*Displays content based on the data-icon content that's in the html file */
+  position: absolute;
+  border-radius: 5px;
+  bottom: 70px;
+  left: 40%;
+  transform: translateX(-40%);
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif !important;
+  font-weight: normal !important; 
+  line-height: 1; 
+  background-color:rgb(160, 255, 112);
+  padding: 2%;
+
+}
+
+.java-i:hover::after {
+  opacity: 1; /* shows data-icon content*/
+}
+
+.java-i:hover {
+  text-shadow: none;
+}
+
+
+
 /* Make sure the icons have a consistent size */
 a i {
   font-size: 45pt; /* Adjust icon size */
-  color: #a1f971; /* Default color */
+  color: #a1f971; 
 }
 
 /* Optional: hover effect */
@@ -415,6 +459,7 @@ a i:hover {
   padding-bottom: 30.25%; /* 16:9 aspect ratio (height / width * 100) */
   height: 0;
   overflow: hidden;
+  margin-left: 8%;
 }
 
 .vid-container iframe {
@@ -485,7 +530,6 @@ a i:hover {
     position: relative;
     width: 100%;
     padding-bottom: 80%; 
-    
     overflow: hidden;
   }
   
@@ -494,8 +538,9 @@ a i:hover {
     top: 0;
     left: 0;
     width: 30em;
-    height: 20em;
+    height: 40em;
     border: none;
+    
   }
 }
 
