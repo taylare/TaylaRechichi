@@ -13,8 +13,12 @@ body {
 
 }
 
+
 h1.text-center.mb-5 {
   margin-top: 15%;
+  text-decoration: underline;
+  text-decoration-color: #b0f592;
+
 }
 
 /* section 1 */
