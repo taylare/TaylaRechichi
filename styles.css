@@ -500,9 +500,21 @@ a i:hover {
     .icon-container {
       display: flex;
       flex-direction: row; /* Stack the icons vertically */
-      align-items: left; /* Center align the icons horizontally */
+      align-items: center; /* Center align the icons horizontally */
       gap: 10px; /* Add space between the icons */
+      text-align: center;
     }
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: calc(var(--bs-gutter-x)* .5);
+      padding-left: calc(var(--bs-gutter-x)* .5);
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+  }
 
     img {
       width: 26em;
