@@ -98,6 +98,7 @@ h1.text-center.mb-5 {
 	display: flex;
 	justify-content: center;
 	gap: 1rem; /* gap between buttons */
+  margin-bottom: 9%;
   }
   
   .btn {
@@ -184,6 +185,23 @@ button.button-home:active::before {                                             
     }
   }
 
+  .arrow {
+    font-size: 45pt;
+    color: #b0f592;
+    position: relative;
+    animation: jump 1s infinite ease-in-out;
+  }
+  
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0); /* start and end position */
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+
 /* end of section 1 */
 
 /* SECTION 2 */
@@ -253,7 +271,9 @@ button.button-home:active::before {                                             
 /* end of section 2 */
 
 /* SECTION 3 PROJECTS */
-
+.proj {
+  margin-top: 9%;
+}
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -438,13 +458,13 @@ p.css {
 
 
 /* Make sure the icons have a consistent size */
-a i {
+.icon {
   font-size: 45pt; /* Adjust icon size */
   color: #a1f971; 
 }
 
 /* Optional: hover effect */
-a i:hover {
+.icon:hover {
   color: #a1f971;
   text-shadow: 
     -2px -2px 0px #caf5c3,  
