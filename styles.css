@@ -343,7 +343,7 @@ h2.proj-title {
   text-decoration-color: #b0f592;
 }
 
-p.js, p.html, p.css {
+p.js, p.html, p.css, p.ejs {
   display: inline-block;
   margin-right: 3%;
   color: black;
@@ -353,6 +353,14 @@ p.js {
   background-color: rgb(248, 255, 169);
   padding: 1%;
   border-color: rgb(241, 252, 129);
+  border-radius: 5px;
+  border-style: solid;
+}
+
+p.ejs {
+  background-color: rgb(169, 31, 98);
+  padding: 1%;
+  border-color: rgb(92, 0, 52);
   border-radius: 5px;
   border-style: solid;
 }
