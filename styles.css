@@ -91,7 +91,7 @@ h1.text-center.mb-5 {
  /* BUTTONS ON HOME PAGE */
 
  #colour-txt {
-  color:#b0f592;
+  color:#afcdff;
  }
   
  .btn-container {
@@ -115,40 +115,30 @@ h1.text-center.mb-5 {
 button.button-home {
   position: relative;
   display: inline-block;
-  border: 0; /* Removes the default button border */
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
-}
-
-/*APPEARANCE STYLES FOR HOME BUTTONS */ 
-
-button.button-home {
+  padding: 0.75em 1.75em;
+  font-size: 1rem;
   font-weight: 600;
-  color: #382b22;
-  padding: 0.75em 1.5em;
-  outline: none;
-  background: #fff0f0;
-  border: 2px solid #080708;
-  border-radius: 0.75em;
-  transform-style: preserve-3d; /*ensures that the 3D transformations of the buttons will be maintained*/                          
+  font-family: inherit;
+  color: #4b4b4b;
+  background: #fffcc2; /* banana pastel yellow */
+  border: 2px solid #f4f46f; /* slightly richer yellow */
+  border-radius: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #f4f46f;
 }
 
+button.button-home:hover {
+  background: #fffea8; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #f4f46f;
+}
 
-/*::before pseudo-element allows the btn to have effects and decoration without having to alter the html or other css code - it's just for aesthetics */
-button.button-home::before {
-  position: absolute; /*position ::before absolutely within the button */
-  content: ""; /* adding empty content allows ::before to render */
-  width: 100%;      
-  height: 100%;       
-  right: 0;     /*aligns the 3d effect to the right */
-  bottom: 0;   /*    and the bottom of the btn      */
-  background: #f9c4d2; 
-  border-radius: inherit;
-  box-shadow: 0 0 0 2px #000000; /*creates a black border around the shadow*/
-  transform: translate3d(0, 0.75em, -1em); /*0: no horizontal movement, 0.75em: pushing element slightly downward, -1em: pushing it backward for a 3D depth effect on the button */
-} /*note: (x, y, z) where x= horizontal, y= vertical, z= depth*/
+button.button-home:active {
+  background: #fbff8c; 
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #f4f46f;
+}
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
     color: var(--bs-btn-active-color);
@@ -156,21 +146,6 @@ button.button-home::before {
     border-color: transparent;
 }
 
-button.button-home:hover {
-  background: #ffe9e9; /* Change background color on hover to a slightly darker colour */
-  transform: translate(0, 0.25em); /* Move the button slightly downward when hovering over it */
-}
-button.button-home:hover::before {
-  box-shadow: 0 0 0 2px #000000, 0 0.5em 0 0 #ffe3e2; /* dual-box shadow effect: adds another shadow effect and moves it downward */
-}
-button.button-home:active {
-  background: #ffe9e9;
-  transform: translate(0em, 0.75em); /* Move the button more downward on click*/
-}
-button.button-home:active::before {                                                       /*these both remove the 3D effect when clicking the btn*/
-  box-shadow: 0 0 0 2px #000000, 0 0 #ffe3e2;
-  transform: translate3d(0, 0, -0.75em); /* Moves pseudo-element more backward on click */
-}
 
  /*making responsive for mobile*/
  @media only screen and (max-width: 767px) {
@@ -187,7 +162,7 @@ button.button-home:active::before {                                             
 
   .arrow {
     font-size: 45pt;
-    color: #b0f592;
+    color: #afcdff;
     position: relative;
     animation: jump 1s infinite ease-in-out;
   }
@@ -207,62 +182,102 @@ button.button-home:active::before {                                             
 /* SECTION 2 */
 
 
+/*────────────────────────────────────────────────────────────
+  TECH GRID SECTION: "Some of the technologies I use"
+────────────────────────────────────────────────────────────*/
+
+/* Entrance Animation */
 @keyframes moveUp {
   0% {
-      transform: translateY(50px); /* normal position */
-      opacity: 0;
+    transform: translateY(50px);
+    opacity: 0;
   }
   50% {
-      transform: translateY(-20px); /* move up */
-      opacity: 1;
+    transform: translateY(-20px);
+    opacity: 1;
   }
   100% {
-      transform: translateY(0); /* back to normal position */
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.languages {
-  font-size: 2rem; /* adjust size as needed */
-  opacity: 0; /* initially hidden */
-  transform: translateY(50px); /* start off below */
-  transition: opacity 0.3s ease-out;
+/* Container Styling */
+
+h1.text-center.mb-5.title.tech-title {
+  text-decoration-color: #eef882 !important;  
 }
 
-/* Adjust for each child with staggered delays */
-.languages.staggered {
+
+#lang {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+#lang h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Responsive Grid Layout */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 9px;
+  justify-items: center;
+  max-width: 878px;
+  margin: 0 auto;
+}
+
+/* Individual Tech Item Styles */
+.tech-item {
+  background: rgb(240, 255, 154);
+  color: #2c2c2c;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75em;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+
+  width: 160px; /* <- Make all items same width */
+  min-height: 48px;
+
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+/* Trigger the animation */
+.tech-item.staggered {
   animation: moveUp 0.6s ease-in-out forwards;
 }
 
-.languages:nth-child(2) {
-  transition-delay: 100ms;
-}
-.languages:nth-child(3) {
-  transition-delay: 200ms;
-}
-.languages:nth-child(4) {
-  transition-delay: 300ms;
-}
-.languages:nth-child(5) {
-  transition-delay: 400ms;
-}
-.languages:nth-child(6) {
-  transition-delay: 500ms;
+/* On hover: lift + brighten */
+.tech-item:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 1px 1px 1px rgba(250, 255, 177, 0.797);
 }
 
-.languages {
-  background-color: #b0f592;
-  margin-bottom: 2%;
-  padding: 2%;
-  margin: 18px;
-  width: 30%;
-  border-radius: 40px;
-  color: black;
+/* Icon styling */
+.tech-item i,
+.tech-icon {
+  font-size: 1.2rem;
 }
 
-.languages:hover {
-  background-color: #90ff94;
-  box-shadow: 0 0 5px rgb(73, 248, 91), 0 0 8px rgba(73, 248, 91), 0 0 10px rgba(73, 248, 91);
+/* Image-based icons (e.g., EJS, Express) */
+.tech-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border: none !important;
 }
 
 
@@ -329,7 +344,7 @@ img {
 p.proj-desc {
 
   font-weight: 600;
-  background-color:#b0f592;
+  background-color:#afcdff;
   padding: 1%;
   font-weight: bolder;
   color:rgb(0, 0, 0);
@@ -337,10 +352,13 @@ p.proj-desc {
   border-radius: 10px;
 }
 
+h1.text-center.mb-5.projects-title {
+    text-decoration-color: #afcdff;
+}
 
 h2.proj-title {
   text-decoration: underline;
-  text-decoration-color: #b0f592;
+  text-decoration-color: #afcdff !important;
 }
 
 p.js, p.html, p.css, p.ejs {
@@ -350,9 +368,9 @@ p.js, p.html, p.css, p.ejs {
 }
 
 p.js {
-  background-color: rgb(248, 255, 169);
+  background-color: rgb(235, 169, 255);
   padding: 1%;
-  border-color: rgb(241, 252, 129);
+  border-color: rgb(169, 108, 181);
   border-radius: 5px;
   border-style: solid;
 }
@@ -379,6 +397,19 @@ p.css {
   border-color: rgb(143, 248, 91);
   border-radius: 5px;
   border-style: solid;
+}
+
+p.php {
+  background-color: rgb(152, 141, 250);
+  padding: 1%;
+  border-color: rgb(66, 69, 255);
+  border-radius: 5px;
+  border-style: solid;
+  display: inline-block;
+  width: 13%;  
+  text-align: center; 
+  color: black;
+  margin: 1%;
 }
 
 .python {
@@ -408,8 +439,16 @@ p.css {
 .fa-circle-play:before, .fa-play-circle:before {
   content: "\f144";
   font-size: 45pt;
-  color: #a1f971;
+  color: rgb(240, 255, 154);
 
+}
+
+.fa-circle-play:hover, .fa-play-circle:hover {
+    text-shadow: 
+    -2px -2px 0px #f4ff7e,  
+    2px -2px 0px #f4ff7e,
+    -2px 2px 0px #f4ff7e,  
+    2px 2px 0px #f4ff7e;
 }
 
 .icon-container {
@@ -429,7 +468,7 @@ p.css {
 .java-i {
   content: "\f144";
   font-size: 45pt;
-  color: #a1f971;
+  color: rgb(240, 255, 154);
 
 }
 
@@ -450,7 +489,7 @@ p.css {
   font-family: Arial, sans-serif !important;
   font-weight: normal !important; 
   line-height: 1; 
-  background-color:rgb(160, 255, 112);
+  background-color:rgb(240, 255, 154);
   padding: 2%;
 
 }
@@ -468,17 +507,17 @@ p.css {
 /* Make sure the icons have a consistent size */
 .icon {
   font-size: 45pt; /* Adjust icon size */
-  color: #a1f971; 
+  color:  rgb(240, 255, 154);
 }
 
 /* Optional: hover effect */
 .icon:hover {
-  color: #a1f971;
+  color: rgb(240, 255, 154);
   text-shadow: 
-    -2px -2px 0px #caf5c3,  
-    2px -2px 0px #caf5c3,
-    -2px 2px 0px #caf5c3,  
-    2px 2px 0px #caf5c3; 
+    -2px -2px 0px #f4ff7e,  
+    2px -2px 0px #f4ff7e,
+    -2px 2px 0px #f4ff7e,  
+    2px 2px 0px #f4ff7e;
 }
 
 .vid-container {
@@ -500,23 +539,45 @@ p.css {
 }
 
 
+.icon-tags {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.icon-tags i {
+  font-size: 2rem;
+  color: #2c2c2c;
+  padding: 0.5rem 0.75rem;
+  background-color: rgb(240, 255, 154);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.icon-tags i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.js-icon { background-color: #fdd56a; color: #000; }
+.html-icon { background-color: #ffc6e0; color: #000; }
+.css-icon { background-color: #b5f5b4; color: #000; }
+.php-icon { background-color: #c4c3f7; color: #000; }
+.ejs-icon { background-color: #f8a8c3; color: #000; }
+.python-icon { background-color: #c9c1f7; color: #000; }
+.java-icon { background-color: #e3b7ff; color: #000; }
+
+
 /* end of section 3 */
 
 @media screen and (max-width: 600px) {
 
-    .languages {
-        background-color: #b0f592;
-        margin-bottom: 2%;
-        padding: 0%;
-        margin: 5px;
-        width: 47%;
-        border-radius: 40px;
-        color: black;
-    }
 
     p.proj-desc {
       font-weight: 600;
-      background-color: #b0f592;
       padding: 1%;
       font-weight: bolder;
       color: rgb(0, 0, 0);

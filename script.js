@@ -1,6 +1,6 @@
 // Selecting target elements for both the hidden elements and the languages
 const hiddenElements = document.querySelectorAll('.hidden');
-const languageElements = document.querySelectorAll('.languages');
+const languageElements = document.querySelectorAll('.tech-item');
 
 // Creating a single intersection observer:
 const observer = new IntersectionObserver((entries, observer) => {
@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
         
         // For language elements, trigger staggered animation
-        if (entry.target.classList.contains('languages')) {
+        if (entry.target.classList.contains('tech-item')) {
             if (entry.isIntersecting) {
                 entry.target.classList.add('staggered');
             } else {

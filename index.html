@@ -4,320 +4,402 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tayla Rechichi E-Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!--SECTION 1-->
-      <div class="container text-center hidden" id="section1">
-              <h1>Hi! I'm 
-                <span id="colour-txt">
-                  <span class="letter" id="t">T</span><span class="letter" id="a">a</span><span class="letter" id="y">y</span><span class="letter" id="l">l</span><span class="letter" id="a2">a</span>
-                  <span class="letter" id="r">R</span><span class="letter" id="e">e</span><span class="letter" id="c">c</span><span class="letter" id="h">h</span><span class="letter" id="i">i</span><span class="letter" id="c2">c</span><span class="letter" id="h2">h</span><span class="letter" id="i2">i</span>
-              </span>              
-            </h1>
-              <h3>I’m a computer science student passionate about web development,<br> I love building user-friendly websites and solving challenging coding problems. </h3>
-              
-            
-              <div class="btn-container">
-              
-                  <a class="btn btn-color-1" href="https://www.linkedin.com/in/tayla-rechichi/" target="_blank">
-                    <button class="button-home" role="button">
-                      <span class="text">LINKEDIN</span>
-                    </button>
-                  </a>
-                  <a class="btn btn-color-1" href="javascript:void(0);" onclick="openEmailPopup()">
-                  <button class="button-home" role="button">
-                    <span class="text">CONTACT</span>
-                  </button>
-                  </a>
-                </div>
-                <a href="#lang"><i class="fa-solid fa-arrow-down text-center arrow"></i></a>
-              </div>
 
-    <!--end of section 1-->
+<!-- SECTION 1 -->
+<div class="container text-center hidden" id="section1">
+  <h1>Hi! I'm 
+    <span id="colour-txt">
+      <span class="letter" id="t">T</span><span class="letter" id="a">a</span><span class="letter" id="y">y</span><span class="letter" id="l">l</span><span class="letter" id="a2">a</span>
+      <span class="letter" id="r">R</span><span class="letter" id="e">e</span><span class="letter" id="c">c</span><span class="letter" id="h">h</span><span class="letter" id="i">i</span><span class="letter" id="c2">c</span><span class="letter" id="h2">h</span><span class="letter" id="i2">i</span>
+    </span>              
+  </h1>
+  <h3>I’m a computer science student passionate about web development,<br> I love building user-friendly websites and solving challenging coding problems. </h3>
 
-    <!-- SECTION 2-->
-    <div class="container hidden" id="lang">
-      <h1 class="text-center mb-5 title">Some of the languages I speak: </h1>
-      <div class="row">
-          <div class="col-4 text-center languages">JAVA</div>
-          <div class="col-4 text-center languages">JAVASCRIPT</div>
-          <div class="col-4 text-center languages">PYTHON</div>
-          <div class="col-4 text-center languages">SQL</div>
-          <div class="col-4 text-center languages">HTML</div>
-          <div class="col-4 text-center languages">CSS</div>
-      </div>
+  <div class="btn-container">
+    <a class="btn btn-color-1" href="https://www.linkedin.com/in/tayla-rechichi/" target="_blank">
+      <button class="button-home" role="button">
+        <span class="text">LINKEDIN</span>
+      </button>
+    </a>
+    <a class="btn btn-color-1" href="javascript:void(0);" onclick="openEmailPopup()">
+      <button class="button-home" role="button">
+        <span class="text">CONTACT</span>
+      </button>
+    </a>
   </div>
-  
-  
-  
-  
+  <a href="#lang"><i class="fa-solid fa-arrow-down text-center arrow"></i></a>
+</div>
 
-    <!--END OF SECTION 2-->
+<!-- SECTION 2 -->
+<div class="container hidden" id="lang">
+  <h1 class="text-center mb-5 title tech-title">My Tech Stack:</h1>
+  <div class="tech-grid">
+    <div class="tech-item staggered" style="animation-delay: 0ms;"><i class="fab fa-java"></i> Java</div>
+    <div class="tech-item staggered" style="animation-delay: 100ms;"><i class="fab fa-js-square"></i> JavaScript</div>
+    <div class="tech-item staggered" style="animation-delay: 200ms;"><i class="fab fa-php"></i> PHP</div>
+    <div class="tech-item staggered" style="animation-delay: 300ms;"><img src="https://ejs.co/favicon.ico" class="tech-icon"> EJS</div>
+    <div class="tech-item staggered" style="animation-delay: 400ms;"><i class="fab fa-react"></i> React</div>
+    <div class="tech-item staggered" style="animation-delay: 500ms;"> Express.js</div>
+    <div class="tech-item staggered" style="animation-delay: 600ms;"><i class="fab fa-node-js"></i> Node.js</div>
+    <div class="tech-item staggered" style="animation-delay: 700ms;"><i class="fas fa-database"></i> MySQL</div>
+    <div class="tech-item staggered" style="animation-delay: 800ms;"><i class="fab fa-html5"></i> HTML</div>
+    <div class="tech-item staggered" style="animation-delay: 900ms;"><i class="fab fa-css3-alt"></i> CSS</div>
+  </div>
+</div>
 
+<!-- SECTION 3 -->
+<div class="container hidden proj">
+  <h1 class="text-center mb-5 projects-title"> My projects:<br> </h1>
 
-    <!--SECTION 3-->
-  <div class="container hidden proj">
-    <h1 class="text-center mb-5"> My projects:<br> </h1>
+  <!-- Project 1 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">The Sweetest Curriculum Capstone Project</h2>
+      <p class="proj-desc">
+        For my ICS 199 capstone project, I led the development of The Sweetest Curriculum, a macaron-themed eCommerce site where each flavour is inspired by a college computing course. Built with PHP, MySQL, JavaScript, HTML, and CSS, the site features user registration, admin product management, a searchable category-based shop, persistent cart, secure Stripe checkout, and order history.
 
-    <div class="row hidden projects d-flex justify-content-start">
-      <div class="col col-10 col-md-6">
-        <h2 class="proj-title">React Notes App</h2>
-          <p class="proj-desc">
-            A React-based note-taking application that dynamically manages user-created notes using component state. The application leverages the useState hook to maintain an array of notes, updating the UI efficiently based on state changes. It follows a modular architecture, with App handling state management, CreateArea handling controlled form inputs, and Note receiving event-driven props for deletion. Notes are added via functional state updates and removed through array filtering, ensuring immutability and predictable re-renders. Prop drilling is used to pass state-modifying functions, maintaining unidirectional data flow within the component tree.
-        </p>
-
-        <div class="container sticker">
-          <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
-        </div>
-
-      </div>
-      <div class="col-md-auto">
-        <div class="icon-container">
-          <a href="https://github.com/taylare/KeeperProject" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-        </div>
-      </div>
-      <div class="col col-lg-2">
-        <div class="image-container">
-          <img src="images/keeper.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row hidden projects d-flex justify-content-start">
-      <div class="col col-10 col-md-6">
-        <h2 class="proj-title">Book Reviews Capstone Project</h2>
-          <p class="proj-desc">
-            This project involves the creation of a personal book review and notes website using Node.js, Express, and PostgreSQL. The goal was to enhance my skills in integrating public APIs, particularly the Open Library Covers API, and to gain hands-on experience with CRUD operations in a PostgreSQL database. The website simulates a user's book reviews, allowing them to add, edit, and delete books, along with fetching book covers from the Open Library API. Data is dynamically stored and retrieved from a PostgreSQL database. The project was designed with a user-friendly interface using EJS templating and ensures robust error handling. Through this project, I gained practical experience in API integration, server-side programming, and database management, as well as improving my overall web development workflow.
-        </p>
-
-        <div class="container sticker">
-          <p class="js">JavaScript</p><p class="ejs">EJS</p><p class="css">CSS</p>
-        </div>
-
-      </div>
-      <div class="col-md-auto">
-        <div class="icon-container">
-          <a href="https://github.com/taylare/CapstoneProj-Books" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-        </div>
-      </div>
-      <div class="col col-lg-2">
-        <div class="image-container">
-          <img src="images/bookreview.png">
-        </div>
+        As Team Lead, Database Designer, and Full-Stack Developer, I managed project coordination, Git version control, and implementation across the full stack—delivering a playful yet fully functional online shopping experience.
+      </p>
+      <div class="container sticker icon-tags align-items-center">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-html5 html-icon" title="HTML5"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+        <i class="fab fa-php php-icon" title="PHP"></i>
       </div>
     </div>
-
-
-    <div class="row hidden projects d-flex justify-content-start">
-        <div class="col col-10 col-md-6">
-          <h2 class="proj-title">Flight Dashboard Project</h2>
-            <p class="proj-desc">
-              The project showcases a flight dashboard with a dynamic, 2D game-inspired interface, utilizing real-time location tracking through Leaflet. Users interact by selecting two checkpoints (represented by planes) to view available flight options. These checkpoints help determine the user’s journey, enabling geographical calculations like flight path distance. The code processes a JSON file containing airport data, converting geographic coordinates from degrees and minutes to decimal format using regex, and places markers for each international airport. When a marker is clicked, it fetches and displays weather data for that airport. The interface also allows users to select two airports, calculate the distance between them, and draw a line on the map to indicate the flight route. Flight options can be filtered by criteria such as duration, cost, and plane type. Users can add selected flights to a cart, view detailed booking information in a modal, and submit bookings through an integrated form.
-          </p>
-
-          <div class="container sticker">
-            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
-          </div>
-
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://taylare.github.io/final/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-            <a href="https://github.com/taylare/final" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/flight2.png">
-          </div>
-        </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://deepblue.camosun.bc.ca/~c0527796/shopping-cart/store.php" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
+        <a href="https://github.com/taylare/sweetest-curriculum" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
       </div>
-
-
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col col-10 col-md-6">
-          <h2 class="proj-title">Secrets Sharing Web Application</h2>
-            <p class="proj-desc">
-              This project is a secure, user-authenticated web application that allows users to anonymously share and view secrets. Built using Node.js, Express, and PostgreSQL, the application employs the MVC architecture for clear separation of concerns. It integrates user authentication through Passport.js with OAuth 2.0 (Google Login) and a custom local strategy, ensuring secure and seamless user sessions. Backend features include password hashing with bcrypt, session management, and CRUD operations with PostgreSQL. The frontend utilizes EJS templates to render dynamic content, styled with CSS and responsive design classes.
-          </p>
-  
-          <div class="container sticker">
-            <p class="js">JavaScript</p><p class="ejs">EJS</p><p class="css">CSS</p>
-          </div>
-  
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://github.com/taylare/Authentication-and-Security" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-          </div>
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/secret.png">
-          </div>
-        </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/sweetest.png">
       </div>
+    </div>
+  </div>
 
-
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col col-12 col-md-6">
-          <h2 class="proj-title">The Simon Game</h2>
-          <p class="proj-desc">
-            This code implements a basic version of the "Simon" memory game using HTML, CSS, and JavaScript (with jQuery). The game involves four colored buttons (green, pink, yellow, blue) that light up in a random sequence. The player must repeat the sequence by clicking the corresponding buttons. As the game progresses, the sequence becomes longer. If the player makes a mistake, the game ends and prompts for a restart. The game’s difficulty increases with each successful round, and the user's progress is displayed with a level counter. 
-          </p>
-          <div class="container sticker">
-            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
-          </div>
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://taylare.github.io/thesimongame/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-            <a href="https://github.com/taylare/thesimongame" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/simon.png">
-          </div>
-        </div>
+  <!-- Project 2 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">Ap&eacute;ritif &amp; Co</h2>
+      <p class="proj-desc">
+       This project is a responsive, single-page website developed for Apéritif & Co, a European-inspired bar in Summer Hill, NSW. Built using HTML5, CSS3, JavaScript, and Bootstrap 5, the site employs a fluid full-screen layout with CSS animations to create a smooth, engaging user experience. A custom dropdown interface dynamically displays food and drink menus without requiring page reloads. The design is mobile-first and fully responsive, leveraging Bootstrap’s grid system and utility classes for adaptive layout behavior across devices. The site also integrates with a third-party booking API for real-time reservations. Additional features include ambient background music managed by an interactive mute toggle, and accessibility-conscious controls for improved user interaction.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-html5 html-icon" title="HTML5"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
       </div>
-
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col col-12 col-md-6">
-          <h2 class="proj-title">Interactive Quiz</h2>
-          <p class="proj-desc">This project is an interactive web-based quiz application. Users enter their name to begin the quiz, where questions are displayed as animated cards. The application uses jQuery for real-time DOM updates and Bootstrap for responsive design. A timer tracks the quiz duration, and scores are calculated based on the user’s responses. Results, including the score and time taken, are shown in a modal. The quiz incorporates smooth animations, sequential question loading, and optional hints for a user-friendly experience.</p>
-          <div class="container sticker">
-            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
-          </div>
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://taylare.github.io/Lab7Quiz/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-            <a href="https://github.com/taylare/Lab7Quiz" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-          </div>  
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/jsquiz.png">
-          </div>
-        </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://aperitifco.com.au/demo/" target="_blank" class="icon"><i class="fa-solid fa-circle-play" data-icon=""></i></a>
       </div>
-
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col  col-md-6">
-          <h2 class="proj-title">Interactive User Management System</h2>
-          <p class="proj-desc">This project is a user management system using HTML, CSS, and JavaScript ES6. It features a login modal where users enter their username, validated via regex. Once logged in, users are presented with a personalized dashboard showing their profile and information. Admins can view and delete non-admin users, while non-admins can only see admins and their own details. The dashboard includes dynamic animations for user actions and a responsive design. Key features include user validation, dynamic card creation, and a delete function with an animated slide-out effect.</p>
-          <p class="proj-desc">usernames are: User1 - 12</p>
-          <div class="container sticker">
-            <p class="js">JavaScript</p><p class="html">HTML</p><p class="css">CSS</p>
-          </div>
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://taylare.github.io/MidtermProject/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-            <a href="https://github.com/taylare/MidtermProject" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-          </div> 
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/midterm.png">
-          </div>
-        </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/aperitif.png">
       </div>
+    </div>
+  </div>
 
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col  col-md-6">
-          <h2 class="proj-title">Java-Based Quiz Project</h2>
-          <p class="proj-desc">
-            This Java-based quiz application is designed using the Model-View-Controller (MVC) architecture, supporting both single and multiple-answer question formats. It dynamically displays questions, providing real-time feedback on user responses. The application seamlessly integrates external data by reading and writing XML and JSON files.
-With an event-driven design, the application ensures efficient user interaction and a well-organized, maintainable codebase.
-          </p>
-          <div class="container sticker">
-            <p class="java">Java</p>
-          </div>
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://github.com/taylare/PracticalExamBonus" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-          </div> 
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/javaquiz.png">
-          </div>
-        </div>
+  <!-- Project 3 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">User Authentication & Admin Dashboard</h2>
+      <p class="proj-desc">
+        This project showcases a PHP-based user authentication system with full login, registration, and admin dashboard functionality. Users can register securely with validation and hashed passwords, while admins can manage users through a protected dashboard. Features include role-based access control, dynamic navbar highlighting, and clean UI styling.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-php php-icon" title="PHP"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
       </div>
-
-      <div class="row hidden projects d-flex justify-content-start">
-        <div class="col  col-md-6">
-          <h2 class="proj-title">RPN Calculator Project</h2>
-          <p class="proj-desc">
-            This code implements an RPN (Reverse Polish Notation) calculator using the Model-View-Controller (MVC) architecture. The CalcRPNController handles user input from the GUI and interacts with the CalcRPNModel, which performs calculations using the CalcBrain class. The calculator supports arithmetic operations, decimal entry, and clear functions, with a stack-based approach to evaluate expressions in Reverse Polish Notation.
-          </p>
-          <div class="container sticker">
-            <p class="java">Java</p>
-          </div>
-        </div>
-        <div class="col-md-auto">
-          <div class="icon-container">
-            <a href="https://github.com/taylare/calcRPN" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-          </div> 
-        </div>
-        <div class="col col-lg-2">
-          <div class="image-container">
-            <img src="images/calcrpn.png">
-          </div>
-        </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://github.com/taylare/Login-App" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
       </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/loginphp.png">
+      </div>
+    </div>
+  </div>
 
-      <div class="row hidden projects d-flex justify-content-start jp-proj">
 
-            <div class="col col-md-6 d-flex align-items-stretch">
-              <div>
-                  <h2 class="proj-title">Networking Project</h2>
-                  <p class="proj-desc">
-                    I developed a real-time temperature monitoring system using Raspberry Pi, CentOS, and Python. The Pi reads temperature data via a 1-Wire sensor and is secured with a firewall (ufw) allowing future access on port 8000. I set up Apache2 to display the temperature readings on a web page and modified the web_temperature.py program to control LEDs based on temperature changes and track the data over time.
-                  </p>
-                  <div class="container sticker">
-                    <p class="python">Python</p>
-                  </div>
-              </div>
-            </div>
-          
-            <div class="col d-flex align-items-stretch vid-container">
-              <!-- Video -->
-              <iframe src="https://drive.google.com/file/d/1rBN9k6RhAzVmMDglLMrXkoVo-0eTlPpv/preview" 
-               allow="autoplay"></iframe>
-            </div>
-          </div>
 
-          <div class="row hidden projects d-flex justify-content-start jp-proj">
 
-            <div class="col col-md-6 d-flex align-items-stretch">
-              <div>
-                  <h2 class="proj-title">Counting Project with Python and Raspberry Pi</h2>
-                  <p class="proj-desc">
-                    In this project, I used Raspberry Pi, CentOS, and Python to create programs for Pi Hat control. I started by testing the Hat LEDs, writing Python scripts with the RPi.GPIO library to control the yellow, red, and green LEDs through specific GPIO pins. I then developed a "counting.py" script that changed the LED color based on button presses—red for odd numbers, green for even numbers, and yellow for powers of 2.
-                  </p>
-                  <div class="container sticker">
-                    <p class="python">Python</p>
-                  </div>
-                </div>
-              </div>
+  <!-- Project 4 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">React Notes App</h2>
+      <p class="proj-desc">
+        This is a simple note-taking app built with React. It lets users add and delete notes in real time using component state. The app uses the useState hook to keep track of notes and updates the UI automatically as changes happen. It’s built with a clean, modular structure: the App component handles state, CreateArea manages the input form, and each Note component receives props to handle deleting. Notes are added and removed using React best practices like functional state updates and array filtering. Data flows one way through the app using prop drilling to keep things consistent and easy to manage.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-react react-icon" title="React"></i>
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://github.com/taylare/KeeperProject" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/keeper.png">
+      </div>
+    </div>
+  </div>
 
-              <div class="col d-flex align-items-stretch vid-container">
-                <!-- Video -->
-                <iframe src="https://drive.google.com/file/d/1_WUH7_kb2foLEfriWtlLxtkLk-N3z3S2/preview" 
-                 allow="autoplay"></iframe>
-              </div>
+  <!-- Project 5 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">Book Reviews Capstone Project</h2>
+      <p class="proj-desc">
+        This project involves the creation of a personal book review and notes website using Node.js, Express, and PostgreSQL. The goal was to enhance my skills in integrating public APIs, particularly the Open Library Covers API, and to gain hands-on experience with CRUD operations in a PostgreSQL database. The website simulates a user's book reviews, allowing them to add, edit, and delete books, along with fetching book covers from the Open Library API. Data is dynamically stored and retrieved from a PostgreSQL database. The project was designed with a user-friendly interface using EJS templating and ensures robust error handling. Through this project, I gained practical experience in API integration, server-side programming, and database management, as well as improving my overall web development workflow.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="js-icon" style="font-size: 14pt; font-weight: bold;">EJS</i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://github.com/taylare/CapstoneProj-Books" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/bookreview.png">
+      </div>
+    </div>
+  </div>
 
-            </div>
-          
-          </div>
-        
+  <!-- Project 6 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">Flight Dashboard Project</h2>
+      <p class="proj-desc">
+        The project showcases a flight dashboard with a dynamic, 2D game-inspired interface, utilizing real-time location tracking through Leaflet. Users interact by selecting two checkpoints (represented by planes) to view available flight options. These checkpoints help determine the user’s journey, enabling geographical calculations like flight path distance. The code processes a JSON file containing airport data, converting geographic coordinates from degrees and minutes to decimal format using regex, and places markers for each international airport. When a marker is clicked, it fetches and displays weather data for that airport. The interface also allows users to select two airports, calculate the distance between them, and draw a line on the map to indicate the flight route. Flight options can be filtered by criteria such as duration, cost, and plane type. Users can add selected flights to a cart, view detailed booking information in a modal, and submit bookings through an integrated form.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-html5 html-icon" title="HTML5"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://taylare.github.io/final/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
+        <a href="https://github.com/taylare/final" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/flight2.png">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Project 7 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-10 col-md-6">
+      <h2 class="proj-title">Secrets Sharing Web Application</h2>
+      <p class="proj-desc">
+        A secure, user-authenticated web application using Node.js, Express, EJS, and PostgreSQL. It supports Google OAuth2 login and local strategy authentication via Passport.js, with session handling, password hashing, and dynamic EJS templating.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="js-icon" style="font-size: 14pt; font-weight: bold;">EJS</i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://github.com/taylare/Authentication-and-Security" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/secret.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 8 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-12 col-md-6">
+      <h2 class="proj-title">The Simon Game</h2>
+      <p class="proj-desc">
+        A classic "Simon" memory game made with HTML, CSS, and JavaScript (jQuery). Buttons light up in a sequence players must repeat. Includes increasing difficulty and restart logic on failure.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-html5 html-icon" title="HTML5"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://taylare.github.io/thesimongame/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
+        <a href="https://github.com/taylare/thesimongame" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/simon.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 9 -->
+  <div class="row hidden projects d-flex justify-content-start">
+    <div class="col col-12 col-md-6">
+      <h2 class="proj-title">Interactive Quiz</h2>
+      <p class="proj-desc">
+        A dynamic web quiz using jQuery and Bootstrap. Includes animated cards, timers, scoring, and results shown in a modal. Real-time updates, hint system, and responsive design are implemented.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+        <i class="fab fa-html5 html-icon" title="HTML5"></i>
+        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="icon-container">
+        <a href="https://taylare.github.io/Lab7Quiz/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
+        <a href="https://github.com/taylare/Lab7Quiz" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="image-container">
+        <img src="images/jsquiz.png">
+      </div>
+    </div>
+  </div>
+
+<!-- Project 10 -->
+<div class="row hidden projects d-flex justify-content-start">
+  <div class="col col-12 col-md-6">
+    <h2 class="proj-title">Interactive User Management System</h2>
+    <p class="proj-desc">
+      A JavaScript-based dashboard that lets admins view, delete, and validate users. Users log in with regex-validated usernames, and different roles see different dashboards. Built with HTML, CSS, and vanilla JS ES6.
+    </p>
+    <div class="container sticker icon-tags">
+      <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+      <i class="fab fa-html5 html-icon" title="HTML5"></i>
+      <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+    </div>
+  </div>
+  <div class="col-md-auto">
+    <div class="icon-container">
+      <a href="https://taylare.github.io/MidtermProject/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
+      <a href="https://github.com/taylare/MidtermProject" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+  <div class="col col-lg-2">
+    <div class="image-container">
+      <img src="images/midterm.png">
+    </div>
+  </div>
+</div>
+
+<!-- Project 11 -->
+<div class="row hidden projects d-flex justify-content-start">
+  <div class="col col-md-6">
+    <h2 class="proj-title">Java-Based Quiz Project</h2>
+    <p class="proj-desc">
+      A desktop quiz app built with Java using MVC architecture. Supports both single and multiple answer formats, handles XML/JSON data, and provides real-time user feedback through event-driven UI.
+    </p>
+    <div class="container sticker icon-tags">
+      <i class="fab fa-java java-icon" title="Java"></i>
+    </div>
+  </div>
+  <div class="col-md-auto">
+    <div class="icon-container">
+      <a href="https://github.com/taylare/PracticalExamBonus" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
+    </div>
+  </div>
+  <div class="col col-lg-2">
+    <div class="image-container">
+      <img src="images/javaquiz.png">
+    </div>
+  </div>
+</div>
+
+<!-- Project 12 -->
+<div class="row hidden projects d-flex justify-content-start">
+  <div class="col col-md-6">
+    <h2 class="proj-title">RPN Calculator Project</h2>
+    <p class="proj-desc">
+      A Java-based RPN (Reverse Polish Notation) calculator using MVC structure. Features a GUI and supports clear, decimal, and arithmetic operations using a stack data structure.
+    </p>
+    <div class="container sticker icon-tags">
+      <i class="fab fa-java java-icon" title="Java"></i>
+    </div>
+  </div>
+  <div class="col-md-auto">
+    <div class="icon-container">
+      <a href="https://github.com/taylare/calcRPN" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
+    </div>
+  </div>
+  <div class="col col-lg-2">
+    <div class="image-container">
+      <img src="images/calcrpn.png">
+    </div>
+  </div>
+</div>
+
+<!-- Project 13 -->
+<div class="row hidden projects d-flex justify-content-start jp-proj">
+  <div class="col col-md-6 d-flex align-items-stretch">
+    <div>
+      <h2 class="proj-title">Networking Project</h2>
+      <p class="proj-desc">
+        A real-time temperature monitoring system using Raspberry Pi, CentOS, Python, Apache2, and a 1-Wire sensor. Web integration shows data and activates LEDs based on thresholds.
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-python python-icon" title="Python"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex align-items-stretch vid-container">
+    <iframe src="https://drive.google.com/file/d/1rBN9k6RhAzVmMDglLMrXkoVo-0eTlPpv/preview" allow="autoplay"></iframe>
+  </div>
+</div>
+
+<!-- Project 14 -->
+<div class="row hidden projects d-flex justify-content-start jp-proj">
+  <div class="col col-md-6 d-flex align-items-stretch">
+    <div>
+      <h2 class="proj-title">Counting Project with Python and Raspberry Pi</h2>
+      <p class="proj-desc">
+        Created LED control programs on Raspberry Pi using Python and GPIO library. Developed a script that changes LED color based on button count logic (odd, even, powers of 2).
+      </p>
+      <div class="container sticker icon-tags">
+        <i class="fab fa-python python-icon" title="Python"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex align-items-stretch vid-container">
+    <iframe src="https://drive.google.com/file/d/1_WUH7_kb2foLEfriWtlLxtkLk-N3z3S2/preview" allow="autoplay"></iframe>
+  </div>
+</div>
+
 
     <!--end of section 3-->
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
