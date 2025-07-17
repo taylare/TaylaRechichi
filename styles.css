@@ -577,13 +577,24 @@ p.php {
 
 
     p.proj-desc {
-      font-weight: 600;
       padding: 1%;
-      font-weight: bolder;
+      font-weight: 450;
       color: rgb(0, 0, 0);
       padding: 2%;
       border-radius: 10px;
-      width: 100%;
+      width: 113%;
+      font-size: 10pt;
+      margin-left: 5%;
+
+
+    }
+    h2.proj-title {
+        margin-left: 27%;
+        font-size: 14pt;
+    }
+
+    .icon-tags {
+        margin-left: 10% !important;
     }
 
     .icon-container {
@@ -606,12 +617,21 @@ p.php {
   }
 
     img {
-      width: 26em;
-      height: 20em;
-      border: 3px solid black;
-      border-radius: 9%;
-  }
+        width: 20em;
+        height: 15em;
+        border: 3px solid black;
+        border-radius: 9%;
+    }
   
+    icon-tags i {
+    font-size: 20pt;
+    color: #2c2c2c;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(240, 255, 154);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
 
   .java {
     width: 34%;
