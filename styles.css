@@ -503,6 +503,16 @@ p.js, p.html, p.css, p.ejs {
 .java-icon { background-color: #e3b7ff; color: #000; }
 
 
+
+.image-container iframe {
+  width: 30em;
+  height: 20em;
+  border-radius: 9%;
+  border: 3px solid black;
+  margin-left: 40%;
+}
+
+
 /* end of section 3 */
 
 @media screen and (max-width: 600px) {
@@ -511,6 +521,17 @@ p.js, p.html, p.css, p.ejs {
     i.fab.fa-java.java-icon {
     margin-bottom: 7%;
 }
+
+@media screen and (max-width: 600px) {
+  .image-container iframe {
+    width: 20em;
+    height: 15em;
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+}
+
+
 
     p.proj-desc {
       padding: 1%;
