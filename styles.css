@@ -367,74 +367,6 @@ p.js, p.html, p.css, p.ejs {
   color: black;
 }
 
-p.js {
-  background-color: rgb(235, 169, 255);
-  padding: 1%;
-  border-color: rgb(169, 108, 181);
-  border-radius: 5px;
-  border-style: solid;
-}
-
-p.ejs {
-  background-color: rgb(169, 31, 98);
-  padding: 1%;
-  border-color: rgb(92, 0, 52);
-  border-radius: 5px;
-  border-style: solid;
-}
-
-p.html {
-  background-color: rgb(255, 192, 247);
-  padding: 1%;
-  border-color: rgb(255, 134, 239);
-  border-radius: 5px;
-  border-style: solid;
-}
-
-p.css {
-  background-color: rgb(177, 250, 141);
-  padding: 1%;
-  border-color: rgb(143, 248, 91);
-  border-radius: 5px;
-  border-style: solid;
-}
-
-p.php {
-  background-color: rgb(152, 141, 250);
-  padding: 1%;
-  border-color: rgb(66, 69, 255);
-  border-radius: 5px;
-  border-style: solid;
-  display: inline-block;
-  width: 13%;  
-  text-align: center; 
-  color: black;
-  margin: 1%;
-}
-
-.python {
-  background-color: rgb(189, 176, 255);
-  padding: 1%;
-  border-color: rgb(146, 124, 251);
-  border-radius: 5px;
-  border-style: solid;
-  display: inline-block;
-  width: 13%;  
-  text-align: center; 
-  color: black;
-}
-
-.java {
-  background-color: rgb(228, 182, 255);
-  padding: 1%;
-  border-color: rgb(194, 88, 255);
-  border-radius: 5px;
-  border-style: solid;
-  display: inline-block;
-  width: 10%;  
-  text-align: center; 
-  color: black;
-}
 
 .fa-circle-play:before, .fa-play-circle:before {
   content: "\f144";
@@ -551,7 +483,7 @@ p.php {
   font-size: 2rem;
   color: #2c2c2c;
   padding: 0.5rem 0.75rem;
-  background-color: rgb(240, 255, 154);
+  background-color: #ceafff;;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
