@@ -552,6 +552,19 @@ p.js, p.html, p.css, p.ejs {
     }
 
 
+    div.proj-desc {
+      padding: 1%;
+      font-weight: 450;
+      text-align: left !important; 
+      color: rgb(0, 0, 0);
+      padding: 2%;
+      border-radius: 10px;
+      width: 113%;
+      font-size: 10pt;
+      margin-left: 5%;
+}
+
+
     h2.proj-title {
         margin-left: 27%;
         font-size: 14pt;
