@@ -103,13 +103,9 @@
     <div class="container hidden proj">
       <h1 class="text-center mb-5 projects-title">My projects:<br /></h1>
 
-      <!-- ═══════════════════════════════════════════
-           Project 1 — Apéritif & Co
-           NOTE: col-12 col-md on the carousel column
-           so it gets full remaining width, not col-lg-2
-      ════════════════════════════════════════════ -->
+      <!--Project 1-->
       <div
-        class="row hidden projects d-flex justify-content-start align-items-center"
+        class="row hidden projects aperitif-row d-flex justify-content-center align-items-center"
       >
         <div class="col-12 col-md-6">
           <h2 class="proj-title">Ap&eacute;ritif &amp; Co</h2>
@@ -166,7 +162,9 @@
         </div>
 
         <!-- Live link icon -->
-        <div class="col-md-auto">
+        <div
+          class="col-12 col-md-auto d-flex justify-content-center my-2 my-md-0"
+        >
           <div class="icon-container">
             <a href="https://aperitifco.com.au/" target="_blank" class="icon">
               <i class="fa-solid fa-circle-play" data-icon=""></i>
@@ -174,11 +172,9 @@
           </div>
         </div>
 
-        <!-- Bootstrap Carousel
-             col-12 col-md = takes remaining width on desktop,
-             full width on mobile -->
+        <!-- Bootstrap Carousel — full width on mobile, remaining width on desktop -->
         <div
-          class="col-12 col-md d-flex align-items-center justify-content-center mt-4 mt-md-0"
+          class="col-12 col-md d-flex align-items-center justify-content-center mt-2 mt-md-0"
         >
           <div
             id="aperitifCarousel"
