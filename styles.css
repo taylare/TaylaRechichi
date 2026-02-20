@@ -617,6 +617,27 @@ p.ejs {
 
 /* ── end Apéritif Carousel ───────────────────────────── */
 
+/* ── Project 1 mobile centering fix ─────────────────────
+   Global mobile CSS adds margin-left offsets designed for
+   col-10 columns. Project 1 uses col-12 so we reset those.
+──────────────────────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  .aperitif-row div.proj-desc {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .aperitif-row h2.proj-title {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .aperitif-row .icon-tags {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   i.fab.fa-java.java-icon {
     margin-bottom: 7%;
