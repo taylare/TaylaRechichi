@@ -1,464 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tayla Rechichi E-Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tayla Rechichi E-Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- SECTION 1 -->
+    <div class="container text-center hidden" id="section1">
+      <h1>
+        Hi! I'm
+        <span id="colour-txt">
+          <span class="letter" id="t">T</span
+          ><span class="letter" id="a">a</span
+          ><span class="letter" id="y">y</span
+          ><span class="letter" id="l">l</span
+          ><span class="letter" id="a2">a</span>
+          <span class="letter" id="r">R</span
+          ><span class="letter" id="e">e</span
+          ><span class="letter" id="c">c</span
+          ><span class="letter" id="h">h</span
+          ><span class="letter" id="i">i</span
+          ><span class="letter" id="c2">c</span
+          ><span class="letter" id="h2">h</span
+          ><span class="letter" id="i2">i</span>
+        </span>
+      </h1>
+      <h3></h3>
 
-<!-- SECTION 1 -->
-<div class="container text-center hidden" id="section1">
-  <h1>Hi! I'm 
-    <span id="colour-txt">
-      <span class="letter" id="t">T</span><span class="letter" id="a">a</span><span class="letter" id="y">y</span><span class="letter" id="l">l</span><span class="letter" id="a2">a</span>
-      <span class="letter" id="r">R</span><span class="letter" id="e">e</span><span class="letter" id="c">c</span><span class="letter" id="h">h</span><span class="letter" id="i">i</span><span class="letter" id="c2">c</span><span class="letter" id="h2">h</span><span class="letter" id="i2">i</span>
-    </span>              
-  </h1>
-  <h3>I’m a computer science student passionate about web development.<br> I love building user-friendly websites and solving challenging coding problems. </h3>
+      <div class="btn-container">
+        <a
+          class="btn btn-color-1"
+          href="https://www.linkedin.com/in/tayla-rechichi/"
+          target="_blank"
+        >
+          <button class="button-home" role="button">
+            <span class="text">LINKEDIN</span>
+          </button>
+        </a>
+        <a
+          class="btn btn-color-1"
+          href="javascript:void(0);"
+          onclick="openEmailPopup()"
+        >
+          <button class="button-home" role="button">
+            <span class="text">CONTACT</span>
+          </button>
+        </a>
+      </div>
+      <a href="#lang"
+        ><i class="fa-solid fa-arrow-down text-center arrow"></i
+      ></a>
+    </div>
 
-  <div class="btn-container">
-    <a class="btn btn-color-1" href="https://www.linkedin.com/in/tayla-rechichi/" target="_blank">
-      <button class="button-home" role="button">
-        <span class="text">LINKEDIN</span>
-      </button>
-    </a>
-    <a class="btn btn-color-1" href="javascript:void(0);" onclick="openEmailPopup()">
-      <button class="button-home" role="button">
-        <span class="text">CONTACT</span>
-      </button>
-    </a>
-  </div>
-  <a href="#lang"><i class="fa-solid fa-arrow-down text-center arrow"></i></a>
-</div>
+    <!-- SECTION 2 -->
+    <div class="container hidden" id="lang">
+      <h1 class="text-center mb-5 title tech-title">My Tech Stack:</h1>
+      <div class="tech-grid">
+        <div class="tech-item staggered" style="animation-delay: 0ms">
+          <i class="fab fa-java"></i> Java
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 100ms">
+          <i class="fab fa-js-square"></i> JavaScript
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 200ms">
+          <i class="fab fa-php"></i> PHP
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 300ms">
+          <img src="https://ejs.co/favicon.ico" class="tech-icon" /> EJS
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 400ms">
+          <i class="fab fa-react"></i> React
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 500ms">
+          Express.js
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 600ms">
+          <i class="fab fa-node-js"></i> Node.js
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 700ms">
+          <i class="fas fa-database"></i> MySQL
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 800ms">
+          <i class="fab fa-html5"></i> HTML
+        </div>
+        <div class="tech-item staggered" style="animation-delay: 900ms">
+          <i class="fab fa-css3-alt"></i> CSS
+        </div>
+      </div>
+    </div>
 
-<!-- SECTION 2 -->
-<div class="container hidden" id="lang">
-  <h1 class="text-center mb-5 title tech-title">My Tech Stack:</h1>
-  <div class="tech-grid">
-    <div class="tech-item staggered" style="animation-delay: 0ms;"><i class="fab fa-java"></i> Java</div>
-    <div class="tech-item staggered" style="animation-delay: 100ms;"><i class="fab fa-js-square"></i> JavaScript</div>
-    <div class="tech-item staggered" style="animation-delay: 200ms;"><i class="fab fa-php"></i> PHP</div>
-    <div class="tech-item staggered" style="animation-delay: 300ms;"><img src="https://ejs.co/favicon.ico" class="tech-icon"> EJS</div>
-    <div class="tech-item staggered" style="animation-delay: 400ms;"><i class="fab fa-react"></i> React</div>
-    <div class="tech-item staggered" style="animation-delay: 500ms;"> Express.js</div>
-    <div class="tech-item staggered" style="animation-delay: 600ms;"><i class="fab fa-node-js"></i> Node.js</div>
-    <div class="tech-item staggered" style="animation-delay: 700ms;"><i class="fas fa-database"></i> MySQL</div>
-    <div class="tech-item staggered" style="animation-delay: 800ms;"><i class="fab fa-html5"></i> HTML</div>
-    <div class="tech-item staggered" style="animation-delay: 900ms;"><i class="fab fa-css3-alt"></i> CSS</div>
-  </div>
-</div>
+    <!-- SECTION 3 -->
+    <div class="container hidden proj">
+      <h1 class="text-center mb-5 projects-title">My projects:<br /></h1>
 
-<!-- SECTION 3 -->
-<div class="container hidden proj">
-  <h1 class="text-center mb-5 projects-title"> My projects:<br> </h1>
+      <!-- ═══════════════════════════════════════════
+           Project 1 — Apéritif & Co
+           NOTE: col-12 col-md on the carousel column
+           so it gets full remaining width, not col-lg-2
+      ════════════════════════════════════════════ -->
+      <div
+        class="row hidden projects d-flex justify-content-start align-items-center"
+      >
+        <div class="col-12 col-md-6">
+          <h2 class="proj-title">Ap&eacute;ritif &amp; Co</h2>
+          <div class="proj-desc">
+            <p>
+              A custom-built website for Apéritif & Co, a European-inspired bar
+              in Summer Hill, NSW - developed across three interconnected pages
+              using HTML5, CSS3, JavaScript, PHP, and Bootstrap 5.
+            </p>
+            <p><strong>Key features include:</strong></p>
+            <ul>
+              <li>
+                Immersive single-page homepage with a full-screen background,
+                ambient autoplay music, and a custom mute/unmute toggle built
+                with JavaScript and Font Awesome.
+              </li>
+              <li>
+                Animated dropdown menu for food and drink PDFs, a NowBookIt API
+                booking integration, fixed contact details, Google Maps link,
+                and social icons.
+              </li>
+              <li>
+                A <em>What's On</em> gallery page with a vintage-styled event
+                poster grid, animated card hover effects, and staggered entrance
+                animations - posters are dynamically served from the server and
+                sorted by upload date.
+              </li>
+              <li>
+                Individual event detail pages that pull data from a JSON file to
+                display title, date, time, description, and a "Reserve Your
+                Table" button - with a cycling colour scheme generated from a
+                filename hash.
+              </li>
+              <li>
+                A secure PHP admin dashboard with session-based authentication,
+                CSRF protection, and hashed passwords - allowing the owner to
+                upload, delete, and edit event posters with metadata (title,
+                subtitle, date, time, description, and a separate display image)
+                via a Bootstrap modal interface.
+              </li>
+              <li>
+                Mobile-first responsive design across all pages, with adaptive
+                breakpoints, a dedicated mobile stylesheet, and reduced-motion
+                support.
+              </li>
+            </ul>
+          </div>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+            <i class="fab fa-php php-icon" title="PHP"></i>
+          </div>
+        </div>
 
-  <!-- Project 1 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">The Sweetest Curriculum Capstone Project</h2>
-      <div class="proj-desc">
-      
-        <p>As the Team Lead, Database Architect, and Full-Stack Developer for my ICS 199 capstone project, my group built The Sweetest Curriculum - a fully functional online store where each macaron flavour represents a computing course at Camosun. The platform was developed using PHP, MySQLi, JavaScript, HTML, and CSS. </p>
-        <p><strong>This website features:</strong></p>
-        <ul>
-          <li>Secure user authentication and registration with hashed passwords</li>
-          <li>Admin panel for product management</li>
-          <li>A searchable, category-based shop with themed product descriptions</li>
-          <li>A persistent cart system, dynamic cart quantity controls, and animated UI feedback</li>
-          <li>Stripe integration for secure payment processing</li>
-          <li>An order history page with downloadable receipts and built-in review functionality</li>
-        </ul> 
-       <p>Behind the scenes, I implemented complex SQL joins for order tracking, used sessions to manage cart state, and wrote scripts to generate and store text-based receipts. I also coordinated Git version control across our team and ensured smooth integration between frontend and backend features. This project combined my technical skills with my love of thoughtful UI to deliver an engaging and polished shopping experience.</p>
+        <!-- Live link icon -->
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a href="https://aperitifco.com.au/" target="_blank" class="icon">
+              <i class="fa-solid fa-circle-play" data-icon=""></i>
+            </a>
+          </div>
+        </div>
 
-      
-      </div>
-      <div class="container sticker icon-tags align-items-center">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-html5 html-icon" title="HTML5"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-        <i class="fab fa-php php-icon" title="PHP"></i>
-      </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://deepblue.camosun.bc.ca/~c0527796/shopping-cart/store.php" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-        <a href="https://github.com/taylare/sweetest-curriculum" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/sweetest.png">
-      </div>
-    </div>
-  </div>
+        <!-- Bootstrap Carousel
+             col-12 col-md = takes remaining width on desktop,
+             full width on mobile -->
+        <div
+          class="col-12 col-md d-flex align-items-center justify-content-center mt-4 mt-md-0"
+        >
+          <div
+            id="aperitifCarousel"
+            class="carousel slide aperitif-carousel"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <!-- Dot indicators -->
+            <div class="carousel-indicators aperitif-indicators">
+              <button
+                type="button"
+                data-bs-target="#aperitifCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#aperitifCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#aperitifCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#aperitifCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
 
-  <!-- Project 2 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Ap&eacute;ritif &amp; Co</h2>
-      <div class="proj-desc">
-       
-        <p>This is a custom-built, single-page website designed for Apéritif & Co, a European-inspired bar in Summer Hill, NSW. Developed using HTML5, CSS3, JavaScript, and Bootstrap 5, the site delivers a refined, fully responsive interface that mirrors the ambience of the venue itself.</p>
-        <p><strong>Key features include:</strong></p>
-        <ul>
-        <li>Fluid full-screen layout with smooth background animations using CSS keyframes for subtle motion and elegance.</li>
-        <li>Custom dropdown menu for food and drink PDFs, animated with delayed transitions and styled for a modern, minimalist look.</li>
-        <li>Third-party booking integration via NowBookIt’s API, allowing users to make real-time reservations.</li>
-        <li>Ambient background music that plays on user interaction, with a custom mute/unmute toggle built using JavaScript and Font Awesome icons.</li>
-        <li>Mobile-first responsive design, leveraging Bootstrap's grid system, utility classes, and adaptive breakpoints to ensure usability across all devices.</li>
-        <li>Social and location integration, with fixed-position contact details, map link, and social icons animated for subtle interactivity </li>
-        </ul>
+            <!-- ALL slides inside carousel-inner (this was the bug) -->
+            <div class="carousel-inner aperitif-carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/1.png"
+                  class="aperitif-slide-img"
+                  alt="Apéritif & Co – Homepage"
+                />
+                <div class="carousel-caption aperitif-caption">
+                  <span>Homepage</span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/2.png"
+                  class="aperitif-slide-img"
+                  alt="Apéritif & Co – What's On"
+                />
+                <div class="carousel-caption aperitif-caption">
+                  <span>What's On</span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/3.png"
+                  class="aperitif-slide-img"
+                  alt="Apéritif & Co – Poster Page"
+                />
+                <div class="carousel-caption aperitif-caption">
+                  <span>Poster Page</span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/4.png"
+                  class="aperitif-slide-img"
+                  alt="Apéritif & Co – Admin Dashboard"
+                />
+                <div class="carousel-caption aperitif-caption">
+                  <span>Admin Dashboard</span>
+                </div>
+              </div>
+            </div>
+            <!-- END carousel-inner -->
 
+            <!-- Controls — inside the carousel div (this was also misplaced) -->
+            <button
+              class="carousel-control-prev aperitif-ctrl"
+              type="button"
+              data-bs-target="#aperitifCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="aperitif-ctrl-icon">&#8249;</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next aperitif-ctrl"
+              type="button"
+              data-bs-target="#aperitifCarousel"
+              data-bs-slide="next"
+            >
+              <span class="aperitif-ctrl-icon">&#8250;</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- END #aperitifCarousel -->
+        </div>
       </div>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-html5 html-icon" title="HTML5"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-      </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://aperitifco.com.au/" target="_blank" class="icon"><i class="fa-solid fa-circle-play" data-icon=""></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/aperitif.png">
-      </div>
-    </div>
-  </div>
+      <!-- END Project 1 row -->
 
-    <!-- Project 3 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Conference Venues and Booking Services</h2>
-      <div class="proj-desc">
-       
-        <p>
-          Originally built over 10 years ago using PHP, HTML, and CSS on WordPress, the Conference Venues website needed a complete design refresh. I was hired to modernise the site while maintaining its original structure. My contributions included updating the layout for better responsiveness, improving cross-browser consistency, and applying cleaner typography and spacing throughout. I also introduced subtle animations and transitions to enhance user experience and bring the interface to life. The result is a more polished, engaging, and mobile-friendly site that aligns with current web standards - achieved without a full rebuild.
-        </p>
+      <!-- Project 2 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">The Sweetest Curriculum Capstone Project</h2>
+          <div class="proj-desc">
+            <p>
+              As the Team Lead, Database Architect, and Full-Stack Developer for
+              my ICS 199 capstone project, my group built The Sweetest
+              Curriculum - a fully functional online store where each macaron
+              flavour represents a computing course at Camosun. The platform was
+              developed using PHP, MySQLi, JavaScript, HTML, and CSS.
+            </p>
+            <p><strong>This website features:</strong></p>
+            <ul>
+              <li>
+                Secure user authentication and registration with hashed
+                passwords
+              </li>
+              <li>Admin panel for product management</li>
+              <li>
+                A searchable, category-based shop with themed product
+                descriptions
+              </li>
+              <li>
+                A persistent cart system, dynamic cart quantity controls, and
+                animated UI feedback
+              </li>
+              <li>Stripe integration for secure payment processing</li>
+              <li>
+                An order history page with downloadable receipts and built-in
+                review functionality
+              </li>
+            </ul>
+            <p>
+              Behind the scenes, I implemented complex SQL joins for order
+              tracking, used sessions to manage cart state, and wrote scripts to
+              generate and store text-based receipts. I also coordinated Git
+              version control across our team and ensured smooth integration
+              between frontend and backend features.
+            </p>
+          </div>
+          <div class="container sticker icon-tags align-items-center">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+            <i class="fab fa-php php-icon" title="PHP"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://deepblue.camosun.bc.ca/~c0527796/shopping-cart/store.php"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+            <a
+              href="https://github.com/taylare/sweetest-curriculum"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/sweetest.png" /></div>
+        </div>
+      </div>
 
+      <!-- Project 3 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Conference Venues and Booking Services</h2>
+          <div class="proj-desc">
+            <p>
+              Originally built over 10 years ago using PHP, HTML, and CSS on
+              WordPress, the Conference Venues website needed a complete design
+              refresh. I was hired to modernise the site while maintaining its
+              original structure. My contributions included updating the layout
+              for better responsiveness, improving cross-browser consistency,
+              and applying cleaner typography and spacing throughout. I also
+              introduced subtle animations and transitions to enhance user
+              experience and bring the interface to life. The result is a more
+              polished, engaging, and mobile-friendly site that aligns with
+              current web standards - achieved without a full rebuild.
+            </p>
+          </div>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-php php-icon" title="PHP"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://conferencevenues.com.au/"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play" data-icon=""></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/cvbs.png" /></div>
+        </div>
       </div>
-      <div class="container sticker icon-tags">
-              <i class="fab fa-php php-icon" title="PHP"></i>
-              <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-              <i class="fab fa-html5 html-icon" title="HTML5"></i>
-      </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://conferencevenues.com.au/" target="_blank" class="icon"><i class="fa-solid fa-circle-play" data-icon=""></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/cvbs.png">
-      </div>
-    </div>
-  </div>
 
-  <!-- Project 4 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">User Authentication & Admin Dashboard</h2>
-      <p class="proj-desc">
-        This project showcases a PHP-based user authentication system with full login, registration, and admin dashboard functionality. Users can register securely with validation and hashed passwords, while admins can manage users through a protected dashboard. Features include role-based access control, dynamic navbar highlighting, and clean UI styling.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-php php-icon" title="PHP"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      <!-- Project 4 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">User Authentication & Admin Dashboard</h2>
+          <p class="proj-desc">
+            This project showcases a PHP-based user authentication system with
+            full login, registration, and admin dashboard functionality. Users
+            can register securely with validation and hashed passwords, while
+            admins can manage users through a protected dashboard. Features
+            include role-based access control, dynamic navbar highlighting, and
+            clean UI styling.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-php php-icon" title="PHP"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://github.com/taylare/Login-App"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/loginphp.png" /></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://github.com/taylare/Login-App" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/loginphp.png">
-      </div>
-    </div>
-  </div>
 
+      <!-- Project 5 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">React Notes App</h2>
+          <p class="proj-desc">
+            This is a simple note-taking app built with React. It lets users add
+            and delete notes in real time using component state. The app uses
+            the useState hook to keep track of notes and updates the UI
+            automatically as changes happen. It's built with a clean, modular
+            structure: the App component handles state, CreateArea manages the
+            input form, and each Note component receives props to handle
+            deleting. Notes are added and removed using React best practices
+            like functional state updates and array filtering. Data flows one
+            way through the app using prop drilling to keep things consistent
+            and easy to manage.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-react react-icon" title="React"></i>
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://github.com/taylare/KeeperProject"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/keeper.png" /></div>
+        </div>
+      </div>
 
+      <!-- Project 6 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Book Reviews Capstone Project</h2>
+          <p class="proj-desc">
+            This project involves the creation of a personal book review and
+            notes website using Node.js, Express, and PostgreSQL. The goal was
+            to enhance my skills in integrating public APIs, particularly the
+            Open Library Covers API, and to gain hands-on experience with CRUD
+            operations in a PostgreSQL database. The website simulates a user's
+            book reviews, allowing them to add, edit, and delete books, along
+            with fetching book covers from the Open Library API. Data is
+            dynamically stored and retrieved from a PostgreSQL database. The
+            project was designed with a user-friendly interface using EJS
+            templating and ensures robust error handling.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="js-icon" style="font-size: 14pt; font-weight: bold"
+              >EJS</i
+            >
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://github.com/taylare/CapstoneProj-Books"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/bookreview.png" /></div>
+        </div>
+      </div>
 
+      <!-- Project 7 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Flight Dashboard Project</h2>
+          <p class="proj-desc">
+            The project showcases a flight dashboard with a dynamic, 2D
+            game-inspired interface, utilizing real-time location tracking
+            through Leaflet. Users interact by selecting two checkpoints
+            (represented by planes) to view available flight options. These
+            checkpoints help determine the user's journey, enabling geographical
+            calculations like flight path distance. The code processes a JSON
+            file containing airport data, converting geographic coordinates from
+            degrees and minutes to decimal format using regex, and places
+            markers for each international airport. When a marker is clicked, it
+            fetches and displays weather data for that airport. The interface
+            also allows users to select two airports, calculate the distance
+            between them, and draw a line on the map to indicate the flight
+            route. Flight options can be filtered by criteria such as duration,
+            cost, and plane type. Users can add selected flights to a cart, view
+            detailed booking information in a modal, and submit bookings through
+            an integrated form.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://taylare.github.io/final/"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+            <a
+              href="https://github.com/taylare/final"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/flight2.png" /></div>
+        </div>
+      </div>
 
-  <!-- Project 5 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">React Notes App</h2>
-      <p class="proj-desc">
-        This is a simple note-taking app built with React. It lets users add and delete notes in real time using component state. The app uses the useState hook to keep track of notes and updates the UI automatically as changes happen. It’s built with a clean, modular structure: the App component handles state, CreateArea manages the input form, and each Note component receives props to handle deleting. Notes are added and removed using React best practices like functional state updates and array filtering. Data flows one way through the app using prop drilling to keep things consistent and easy to manage.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-react react-icon" title="React"></i>
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      <!-- Project 8 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Secrets Sharing Web Application</h2>
+          <p class="proj-desc">
+            A secure, user-authenticated web application using Node.js, Express,
+            EJS, and PostgreSQL. It supports Google OAuth2 login and local
+            strategy authentication via Passport.js, with session handling,
+            password hashing, and dynamic EJS templating.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="js-icon" style="font-size: 14pt; font-weight: bold"
+              >EJS</i
+            >
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://github.com/taylare/Authentication-and-Security"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/secret.png" /></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://github.com/taylare/KeeperProject" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/keeper.png">
-      </div>
-    </div>
-  </div>
 
-  <!-- Project 6 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Book Reviews Capstone Project</h2>
-      <p class="proj-desc">
-        This project involves the creation of a personal book review and notes website using Node.js, Express, and PostgreSQL. The goal was to enhance my skills in integrating public APIs, particularly the Open Library Covers API, and to gain hands-on experience with CRUD operations in a PostgreSQL database. The website simulates a user's book reviews, allowing them to add, edit, and delete books, along with fetching book covers from the Open Library API. Data is dynamically stored and retrieved from a PostgreSQL database. The project was designed with a user-friendly interface using EJS templating and ensures robust error handling. Through this project, I gained practical experience in API integration, server-side programming, and database management, as well as improving my overall web development workflow.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="js-icon" style="font-size: 14pt; font-weight: bold;">EJS</i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      <!-- Project 9 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">The Simon Game</h2>
+          <p class="proj-desc">
+            A classic "Simon" memory game made with HTML, CSS, and JavaScript
+            (jQuery). Buttons light up in a sequence players must repeat.
+            Includes increasing difficulty and restart logic on failure.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://taylare.github.io/thesimongame/"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+            <a
+              href="https://github.com/taylare/thesimongame"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/simon.png" /></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://github.com/taylare/CapstoneProj-Books" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/bookreview.png">
-      </div>
-    </div>
-  </div>
 
-  <!-- Project 7 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Flight Dashboard Project</h2>
-      <p class="proj-desc">
-        The project showcases a flight dashboard with a dynamic, 2D game-inspired interface, utilizing real-time location tracking through Leaflet. Users interact by selecting two checkpoints (represented by planes) to view available flight options. These checkpoints help determine the user’s journey, enabling geographical calculations like flight path distance. The code processes a JSON file containing airport data, converting geographic coordinates from degrees and minutes to decimal format using regex, and places markers for each international airport. When a marker is clicked, it fetches and displays weather data for that airport. The interface also allows users to select two airports, calculate the distance between them, and draw a line on the map to indicate the flight route. Flight options can be filtered by criteria such as duration, cost, and plane type. Users can add selected flights to a cart, view detailed booking information in a modal, and submit bookings through an integrated form.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-html5 html-icon" title="HTML5"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      <!-- Project 10 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Interactive Quiz</h2>
+          <p class="proj-desc">
+            A dynamic web quiz using jQuery and Bootstrap. Includes animated
+            cards, timers, scoring, and results shown in a modal. Real-time
+            updates, hint system, and responsive design are implemented.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://taylare.github.io/Lab7Quiz/"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+            <a
+              href="https://github.com/taylare/Lab7Quiz"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/jsquiz.png" /></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://taylare.github.io/final/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-        <a href="https://github.com/taylare/final" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/flight2.png">
-      </div>
-    </div>
-  </div>
 
+      <!-- Project 11 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Interactive User Management System</h2>
+          <p class="proj-desc">
+            A JavaScript-based dashboard that lets admins view, delete, and
+            validate users. Users log in with regex-validated usernames, and
+            different roles see different dashboards. Built with HTML, CSS, and
+            vanilla JS ES6.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+            <i class="fab fa-html5 html-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://taylare.github.io/MidtermProject/"
+              target="_blank"
+              class="icon"
+              ><i class="fa-solid fa-circle-play"></i
+            ></a>
+            <a
+              href="https://github.com/taylare/MidtermProject"
+              target="_blank"
+              class="icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/midterm.png" /></div>
+        </div>
+      </div>
 
+      <!-- Project 12 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">Java-Based Quiz Project</h2>
+          <p class="proj-desc">
+            A desktop quiz app built with Java using MVC architecture. Supports
+            both single and multiple answer formats, handles XML/JSON data, and
+            provides real-time user feedback through event-driven UI.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-java java-icon" title="Java"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a
+              href="https://github.com/taylare/PracticalExamBonus"
+              target="_blank"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/javaquiz.png" /></div>
+        </div>
+      </div>
 
-  <!-- Project 8 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Secrets Sharing Web Application</h2>
-      <p class="proj-desc">
-        A secure, user-authenticated web application using Node.js, Express, EJS, and PostgreSQL. It supports Google OAuth2 login and local strategy authentication via Passport.js, with session handling, password hashing, and dynamic EJS templating.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="js-icon" style="font-size: 14pt; font-weight: bold;">EJS</i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
+      <!-- Project 13 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6">
+          <h2 class="proj-title">RPN Calculator Project</h2>
+          <p class="proj-desc">
+            A Java-based RPN (Reverse Polish Notation) calculator using MVC
+            structure. Features a GUI and supports clear, decimal, and
+            arithmetic operations using a stack data structure.
+          </p>
+          <div class="container sticker icon-tags">
+            <i class="fab fa-java java-icon" title="Java"></i>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="icon-container">
+            <a href="https://github.com/taylare/calcRPN" target="_blank"
+              ><i class="fa-brands fa-github java-i" data-icon="github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container"><img src="images/calcrpn.png" /></div>
+        </div>
+      </div>
+
+      <!-- Project 14 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6 d-flex align-items-stretch">
+          <div>
+            <h2 class="proj-title">Networking Project</h2>
+            <p class="proj-desc">
+              A real-time temperature monitoring system using Raspberry Pi,
+              CentOS, Python, Apache2, and a 1-Wire sensor. Web integration
+              shows data and activates LEDs based on thresholds.
+            </p>
+            <div class="container sticker icon-tags">
+              <i class="fab fa-python python-icon" title="Python"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container">
+            <iframe
+              src="https://drive.google.com/file/d/1rBN9k6RhAzVmMDglLMrXkoVo-0eTlPpv/preview"
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 15 -->
+      <div class="row hidden projects d-flex justify-content-start">
+        <div class="col col-10 col-md-6 d-flex align-items-stretch">
+          <div>
+            <h2 class="proj-title">
+              Counting Project with Python and Raspberry Pi
+            </h2>
+            <p class="proj-desc">
+              Created LED control programs on Raspberry Pi using Python and GPIO
+              library. Developed a script that changes LED color based on button
+              count logic (odd, even, powers of 2).
+            </p>
+            <div class="container sticker icon-tags">
+              <i class="fab fa-python python-icon" title="Python"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-2">
+          <div class="image-container">
+            <iframe
+              src="https://drive.google.com/file/d/1_WUH7_kb2foLEfriWtlLxtkLk-N3z3S2/preview"
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://github.com/taylare/Authentication-and-Security" target="_blank" class="icon"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/secret.png">
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 9 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">The Simon Game</h2>
-      <p class="proj-desc">
-        A classic "Simon" memory game made with HTML, CSS, and JavaScript (jQuery). Buttons light up in a sequence players must repeat. Includes increasing difficulty and restart logic on failure.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-html5 html-icon" title="HTML5"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-      </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://taylare.github.io/thesimongame/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-        <a href="https://github.com/taylare/thesimongame" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/simon.png">
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 10 -->
-  <div class="row hidden projects d-flex justify-content-start">
-    <div class="col col-10 col-md-6">
-      <h2 class="proj-title">Interactive Quiz</h2>
-      <p class="proj-desc">
-        A dynamic web quiz using jQuery and Bootstrap. Includes animated cards, timers, scoring, and results shown in a modal. Real-time updates, hint system, and responsive design are implemented.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-        <i class="fab fa-html5 html-icon" title="HTML5"></i>
-        <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-      </div>
-    </div>
-    <div class="col-md-auto">
-      <div class="icon-container">
-        <a href="https://taylare.github.io/Lab7Quiz/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-        <a href="https://github.com/taylare/Lab7Quiz" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </div>
-    <div class="col col-lg-2">
-      <div class="image-container">
-        <img src="images/jsquiz.png">
-      </div>
-    </div>
-  </div>
-
-<!-- Project 11 -->
-<div class="row hidden projects d-flex justify-content-start">
-  <div class="col col-10 col-md-6">
-    <h2 class="proj-title">Interactive User Management System</h2>
-    <p class="proj-desc">
-      A JavaScript-based dashboard that lets admins view, delete, and validate users. Users log in with regex-validated usernames, and different roles see different dashboards. Built with HTML, CSS, and vanilla JS ES6.
-    </p>
-    <div class="container sticker icon-tags">
-      <i class="fab fa-js-square js-icon" title="JavaScript"></i>
-      <i class="fab fa-html5 html-icon" title="HTML5"></i>
-      <i class="fab fa-css3-alt css-icon" title="CSS3"></i>
-    </div>
-  </div>
-  <div class="col-md-auto">
-    <div class="icon-container">
-      <a href="https://taylare.github.io/MidtermProject/" target="_blank" class="icon"><i class="fa-solid fa-circle-play"></i></a>
-      <a href="https://github.com/taylare/MidtermProject" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
-    </div>
-  </div>
-  <div class="col col-lg-2">
-    <div class="image-container">
-      <img src="images/midterm.png">
-    </div>
-  </div>
-</div>
-
-<!-- Project 12 -->
-<div class="row hidden projects d-flex justify-content-start">
-  <div class="col col-10 col-md-6">
-    <h2 class="proj-title">Java-Based Quiz Project</h2>
-    <p class="proj-desc">
-      A desktop quiz app built with Java using MVC architecture. Supports both single and multiple answer formats, handles XML/JSON data, and provides real-time user feedback through event-driven UI.
-    </p>
-    <div class="container sticker icon-tags">
-      <i class="fab fa-java java-icon" title="Java"></i>
-    </div>
-  </div>
-  <div class="col-md-auto">
-    <div class="icon-container">
-      <a href="https://github.com/taylare/PracticalExamBonus" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-    </div>
-  </div>
-  <div class="col col-lg-2">
-    <div class="image-container">
-      <img src="images/javaquiz.png">
-    </div>
-  </div>
-</div>
-
-<!-- Project 13 -->
-<div class="row hidden projects d-flex justify-content-start">
-  <div class="col col-10 col-md-6">
-    <h2 class="proj-title">RPN Calculator Project</h2>
-    <p class="proj-desc">
-      A Java-based RPN (Reverse Polish Notation) calculator using MVC structure. Features a GUI and supports clear, decimal, and arithmetic operations using a stack data structure.
-    </p>
-    <div class="container sticker icon-tags">
-      <i class="fab fa-java java-icon" title="Java"></i>
-    </div>
-  </div>
-  <div class="col-md-auto">
-    <div class="icon-container">
-      <a href="https://github.com/taylare/calcRPN" target="_blank"><i class="fa-brands fa-github java-i" data-icon="github"></i></a>
-    </div>
-  </div>
-  <div class="col col-lg-2">
-    <div class="image-container">
-      <img src="images/calcrpn.png">
-    </div>
-  </div>
-</div>
-
-<!-- Project 14 -->
-<div class="row hidden projects d-flex justify-content-start">
-  <div class="col col-10 col-md-6 d-flex align-items-stretch">
-    <div>
-      <h2 class="proj-title">Networking Project</h2>
-      <p class="proj-desc">
-        A real-time temperature monitoring system using Raspberry Pi, CentOS, Python, Apache2, and a 1-Wire sensor. Web integration shows data and activates LEDs based on thresholds.
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-python python-icon" title="Python"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col col-lg-2">
-    <div class="image-container">
-      <iframe src="https://drive.google.com/file/d/1rBN9k6RhAzVmMDglLMrXkoVo-0eTlPpv/preview" allow="autoplay"></iframe>
-    </div>
-  </div>
-</div>
-
-<!-- Project 15 -->
-<div class="row hidden projects d-flex justify-content-start">
-  <div class="col col-10 col-md-6 d-flex align-items-stretch">
-    <div>
-      <h2 class="proj-title">Counting Project with Python and Raspberry Pi</h2>
-      <p class="proj-desc">
-        Created LED control programs on Raspberry Pi using Python and GPIO library. Developed a script that changes LED color based on button count logic (odd, even, powers of 2).
-      </p>
-      <div class="container sticker icon-tags">
-        <i class="fab fa-python python-icon" title="Python"></i>
-      </div>
-    </div>
-  </div>
-  <div class="col col-lg-2">
-    <div class="image-container">
-      <iframe src="https://drive.google.com/file/d/1_WUH7_kb2foLEfriWtlLxtkLk-N3z3S2/preview" allow="autoplay"></iframe>
-    </div>
-  </div>
-</div>
-
-
     <!--end of section 3-->
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
